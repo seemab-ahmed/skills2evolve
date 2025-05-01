@@ -1,16 +1,6 @@
 "use client";
 import Head from 'next/head';
-import Header from '@/component/Header';
-import Banner from '@/component/Banner';
-import BlogSearch from '@/component/BlogSearch';
-import Bloglist from '@/component/Bloglist';
-import Future from '@/component/build-future';
-import Footer from '@/component/footer';
 export default function Home() {
-  const handleSearch = (searchTerm) => {
-    console.log('Searching for:', searchTerm);
-    // Implement your search logic here
-  };
 
   return (
     <>
@@ -36,13 +26,8 @@ export default function Home() {
       </Head>
 
       <div className="min-h-screen flex flex-col">
-        <Header />
         <main>
-          <Banner />
-          <BlogSearch onSearch={handleSearch} />
-          <Bloglist />
-          <Future />
-          <Footer />
+          
           
           {/* Rest of your content goes here */}
           <div className="container mx-auto py-12 px-4">
