@@ -13,7 +13,7 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'Practice', path: '/' },
     { name: 'About', path: '/' },
-    { name: 'Blogs', path: '/' }
+    { name: 'Blogs', path: '/blog' }
   ];
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
