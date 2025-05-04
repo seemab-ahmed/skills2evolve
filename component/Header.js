@@ -33,22 +33,16 @@ const Header = () => {
               priority
           />
         </div>
-      </Link>
-
-  
-      {/* ${
-                  pathname === item.path 
-                    ? 'text-blue-700 border-b-2 border-blue-700 pb-1' 
-                    : 'text-gray-700 hover:text-blue-600'
-                }` */}
-
+      </Link>                               
           <nav className={`
-                  fixed top-14 right-0 h-full max-w-[400px] w-full bg-secondry p-6
-                  transform  duration-300 ease-in-out z-50
-                  lg:static lg:transform-none lg:flex lg:flex-row bg-[#1B5795] lg:bg-transparent lg:p-0
-                 flex flex-col gap-[30px] lg:max-w-fit  md:space-x-6 transition-all 
-                  ${menuOpen ? "translate-x-0" : "translate-x-full"} lg:translate-x-0
-                `}>
+              fixed top-14 right-0 h-full max-w-[400px] w-full bg-secondry p-6
+              transform duration-300 ease-in-out z-50
+              lg:static lg:transform-none lg:flex lg:flex-row bg-[#1B5795] lg:bg-transparent lg:p-0
+              flex flex-col gap-[30px] lg:max-w-fit md:space-x-6 transition-all
+              ${menuOpen ? "translate-x-0 opacity-100 visible h-full" : "translate-x-full opacity-0 invisible h-0"}
+              lg:translate-x-0 lg:opacity-100 lg:visible
+            `}>
+
             <ul className=" gap-4 flex space-x-8 flex-col   lg:flex-row">
               {navItems.map((item) => (
                 <li key={item.name} className='text-center m-0'>

@@ -92,6 +92,235 @@ const BlogList = ({ searchTerm = '' }) => {
       excerpt:
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
+    {
+      image: Blogimg1,
+      title:
+        "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title:
+        "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title:
+        "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title:
+        "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title:
+        "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
   ];
   
   const categories = [
@@ -115,58 +344,81 @@ const BlogList = ({ searchTerm = '' }) => {
 
   return (
     <div className="max-w-[1080px] m-auto px-5">
-      <div className="flex flex-col md:flex-row gap-6 border-t-2 border-[#D6D6D6] pt-[30px] md:pb-[100px] pb-[50px]">
-        <div className="max-w-[774px] flex flex-col gap-9">
+      <div className=" relative flex flex-col md:flex-row gap-6 border-t-2 border-[#D6D6D6] pt-[30px] md:pb-[100px] pb-[50px]">
+        <div className="max-w-[774px] w-full flex flex-col gap-9">
           {currentPosts.length > 0 ? (
             currentPosts.map((post, index) => (
               <BlogCard key={index} {...post} />
             ))
           ) : (
-            <div className="text-center py-10">
+            <div className="">
               <p className="text-[#707070] text-lg">No posts found matching your search.</p>
             </div>
           )}
 
-          {/* Pagination Controls - Only show if not searching or search returned results */}
-          {filteredPosts.length > postsPerPage && (
-            <div className="flex justify-center mt-6 gap-3">
-              <button
-                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                disabled={currentPage === 1}
-                className="hover:text-[#FB971B] transition-all ease-in-out duration-500 w-[48px] h-[48px] rounded-[50%] flex items-center justify-center border disabled:opacity-50"
-              >
-                <svg className="cursor-pointer w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
-                </svg>
-              </button>
-              {[...Array(totalPages)].map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setCurrentPage(idx + 1)}
-                  className={`w-[48px] h-[48px] rounded-[50%] border cursor-pointer ${
-                    currentPage === idx + 1 ? "bg-[#1B5795] text-white" : ""
-                  }`}
-                >
-                  {idx + 1}
-                </button>
-              ))}
-              <button
-                onClick={() =>
-                  setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                }
-                disabled={currentPage === totalPages}
-                className="cursor-pointer hover:text-[#FB971B] transition-all ease-in-out duration-500 flex items-center justify-center w-[48px] h-[48px] rounded-[50%] border disabled:opacity-50"
-              >
-                <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
-                </svg>
-              </button>
-            </div>
-          )}
+            {filteredPosts.length > postsPerPage && (
+              <div className="flex justify-center mt-6 gap-3">
+                {(() => {
+                  const visiblePages = 3;
+                  let startPage = Math.max(currentPage - Math.floor(visiblePages / 2), 1);
+                  let endPage = startPage + visiblePages - 1;
+
+                  if (endPage > totalPages) {
+                    endPage = totalPages;
+                    startPage = Math.max(endPage - visiblePages + 1, 1);
+                  }
+
+                  const pageNumbers = [];
+                  for (let i = startPage; i <= endPage; i++) {
+                    pageNumbers.push(i);
+                  }
+
+                  return (
+                    <>
+                     
+                        <button
+                          onClick={() => setCurrentPage(currentPage - 1)}
+                          className="hover:text-[#FB971B] transition-all ease-in-out duration-500 w-[48px] h-[48px] rounded-[50%] flex items-center justify-center border disabled:opacity-50"
+                        >
+                              <svg className="cursor-pointer w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                        </button>
+                      
+
+                      {pageNumbers.map((pageNum) => (
+                        <button
+                          key={pageNum}
+                          onClick={() => setCurrentPage(pageNum)}
+                          className={`w-[48px] h-[48px] rounded-[50%] border cursor-pointer ${
+                            currentPage === pageNum ? "bg-[#1B5795] text-white" : ''
+                          }`}
+                          
+                        >
+                          {pageNum}
+                        </button>
+                      ))}
+
+                      
+                        <button
+                          onClick={() => setCurrentPage(currentPage + 1)}
+                          className="hover:text-[#FB971B] transition-all ease-in-out duration-500 w-[48px] h-[48px] rounded-[50%] flex items-center justify-center border disabled:opacity-50"
+                        >
+                          <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+                      
+                    </>
+                  );
+                })()}
+              </div>
+            )}
+
         </div>
 
         {/* Right sidebar remains unchanged */}
-        <div className="right_main_col flex flex-wrap md:flex-col gap-6 md:max-w-[242px] w-full">
+        <div className=" sticky top-0 h-fit right_main_col flex flex-wrap md:flex-col gap-6 md:max-w-[242px] w-full">
           {/* Newsletter box */}
           <div className="bg-[#CED7FF4D] px-[10px] py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full">
             <div className="mx-auto rounded-full flex items-center justify-center">
