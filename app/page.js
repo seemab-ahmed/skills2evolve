@@ -1,7 +1,11 @@
 "use client";
 import Head from 'next/head';
-export default function Home() {
+import Homebanner from '../component/Hero';
+import Career from '../component/career';
+import Ourcources from '../component/Ourcourses';
+import Futuresection from '../component/build-future';
 
+export default function Home() {
   return (
     <>
       <Head>
@@ -24,17 +28,10 @@ export default function Home() {
         <meta name="twitter:description" content="Discover insights, guides and best practices to enhance your skills and secure your future." />
         <meta name="twitter:image" content="https://skills2evolve.com/twitter-image.jpg" />
       </Head>
-
-      <div className="min-h-screen flex flex-col">
-        <main>
-          
-          
-          {/* Rest of your content goes here */}
-          <div className="container mx-auto py-12 px-4">
-            {/* Blog posts would go here */}
-          </div>
-        </main>
-      </div>
+      <Homebanner />
+      <Career />
+      <Ourcources />
+      <Futuresection />
     </>
   );
 }
