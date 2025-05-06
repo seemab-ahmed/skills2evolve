@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Homebanner from '../component/Hero';
 import Career from '../component/career';
 import Ourcources from '../component/Ourcourses';
-import Futuresection from '../component/build-future';
+import Companylogos from '@/component/companylogos';
 
 export default function Home() {
   return (
@@ -29,9 +29,9 @@ export default function Home() {
         <meta name="twitter:image" content="https://skills2evolve.com/twitter-image.jpg" />
       </Head>
       <Homebanner />
+      <Companylogos />
       <Career />
       <Ourcources />
-      <Futuresection />
     </>
   );
 }
