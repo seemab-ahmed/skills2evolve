@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="py-4  border-b border-[#D6D6D6] bg-[#F7F7F7] ${sticky fixed w-full top-0 z-[99]">
-      <div className='max-w-[1300px] m-auto px-5 flex justify-between items-center'>
+      <div className='max-w-[1080px] m-auto px-5 flex justify-between items-center'>
       <Link href="/" className="flex items-center">
         <div className="flex items-center max-w-[221px]">
           <Image 

@@ -95,7 +95,7 @@ const Footer = () => {
                 </div>
 
                 {/* Right Column - Links */}
-                <div className="md:max-w-[532px] w-full justify-between flex flex-nowrap gap-4 text-sm text-gray-700">
+                <div className="md:max-w-[532px] w-full justify-between flex md:flex-nowrap flex-wrap gap-4 text-sm text-gray-700">
                     {footerLinks.map((column, index) => (
                     <div key={index}>
                         <h3 className="text-[16px] font-[Inter] leading-6 text-[#1E1E1E] mb-[12px] font-semibold">

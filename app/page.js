@@ -4,7 +4,8 @@ import Homebanner from '../component/Hero';
 import Career from '../component/career';
 import Ourcources from '../component/Ourcourses';
 import Companylogos from '@/component/companylogos';
-
+import Benefits from '@/component/Benefits';
+import Testimonials from '@/component/Testimonial';
 export default function Home() {
   return (
     <>
@@ -32,6 +33,8 @@ export default function Home() {
       <Companylogos />
       <Career />
       <Ourcources />
+      <Benefits />
+      <Testimonials />
     </>
   );
 }
