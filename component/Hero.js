@@ -4,17 +4,17 @@ import bannerimage from "../Images/bannerright.png"
 import Image from "next/image"; 
 const Hero = () => {
   return (
-    <div className="bg-white pt-[70px]  pb-2 m-auto max-w-[1080px] px-5">
+    <div className="bg-white pt-[70px]  pb-2 m-auto max-w-[1080px] 2xl:max-w-[1440px] px-5">
       <div className="flex md:flex-row flex-col gap-10 md:gap-0 ">
         {/* Text Section */}
-        <div className="space-y-6 w-full lg:pt-[90px] pt-[30px]  max-w-[630px] relative z-10">
+        <div className="space-y-6 w-full lg:pt-[90px] pt-[30px]  max-w-[630px] 2xl:max-w-[800px] relative z-10">
           <span className="text-sm leading-5 mb-2 font-semibold  text-[#1B5795] px-4 py-1 rounded-full inline-block border border-[#CED7FF]">
             PLATFORM: EDUCATION ONLINE LEARNING
           </span>
           <h1 className=" lg:max-w-[376px] max-w-full lg:text-6xl text-4xl md:leading-[72px] leading-[60px] mb-3   text-[#1E1E1E] font-bold ">
             Master In-Demand Tech Skills.
           </h1>
-          <p className=" max-w-full md:max-w-[498px] text-base leading-6 mb-3 font-normal   text-[#707070]">
+          <p className=" max-w-full 2xl:max-w-full md:max-w-[498px] text-base leading-6 mb-3 font-normal   text-[#707070]">
             Whether you’re starting fresh or upskilling, unlock the tools,
             mindset, and mentorship to transform your career.
           </p>
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
 
         {/* Image/Icons Section */}
-        <div className="w-full max-w-[679px] lg:ml-[-250px]">
+        <div className="w-full max-w-[680px] lg:ml-[-250px] 2xl:ml-[-65px]">
            <Image src={bannerimage} alt="Logo" className="w-full h-auto " />
         </div>
       </div>

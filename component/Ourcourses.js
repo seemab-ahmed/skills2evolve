@@ -1,10 +1,26 @@
 import React from "react";
 import Image from "next/image";
 import women from '../Images/women.png'
+import Coursebg from '../Images/course-bg.png'
+import Courseright from '../Images/course-right.png'
 import Link from "next/link";
 const Ourcourses = () => {
   return (
-    <div className="pb-[56px] px-5 m-auto max-w-[1080px] bg-white">
+    <div className=" relative pb-[56px] px-5 m-auto max-w-[1080px] 2xl:max-w-[1440px] bg-white">
+      <div className="absolute top-0 h-full left-[-5%] z-10">
+      <Image
+              src={Coursebg}
+              alt="Student"
+              className=" flex  w-full h-full"
+            />
+      </div>
+      <div className="absolute top-0 bottom-0 m-auto h-fit right-0 z-10">
+      <Image
+              src={Courseright}
+              alt="Student"
+              className=" flex  w-full h-auto"
+            />
+      </div>
       <div className="">
         {/* Left Image and Heading */}
         <div className="flex flex-col md:flex-row gap-5 lg:gap-0 mb-10 items-end">
@@ -32,7 +48,7 @@ const Ourcourses = () => {
         </div>
 
         {/* Right Course Cards */}
-        <div className="flex flex-wrap lg:flex-nowrap gap-6">
+        <div className="flex flex-wrap lg:flex-nowrap gap-6 relative z-20">
           {[
             {
               title: "Cloud Computing Foundations",
@@ -50,7 +66,7 @@ const Ourcourses = () => {
                 "Explore the world of Artificial Intelligence—understand how it works, where it’s used, and how you can be part of shaping its future.",
             },
           ].map((course, idx) => (
-            <div key={idx} className="bg-white  shadow-lg  p-5 md:max-w-[331px] flex flex-col gap-5 rounded-lg">
+            <div key={idx} className="bg-white  shadow-lg  p-5 md:max-w-[331px] 2xl:max-w-[33%] flex flex-col gap-5 rounded-lg">
               <div >   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 10H17V11H11V10Z" fill="#1B5795"/>
                 <path d="M18 10H19V11H18V10Z" fill="#1B5795"/>

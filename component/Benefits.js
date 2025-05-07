@@ -127,7 +127,7 @@ const Career = () => {
   return (
     <div className="pb-[60px] ">
   
-      <div className="bg-[#242F3B]  text-white md:pt-[63px] md:px-[40px] px-[20px] md:pb-[71px] py-[50px] relative max-w-[1040px] m-auto rounded-2xl">
+      <div className="bg-[#242F3B]  text-white md:pt-[63px] md:px-[40px] px-[20px] md:pb-[71px] py-[50px] relative max-w-[1040px] 2xl:max-w-[1400px] m-auto rounded-2xl">
       <div className="absolute w-fit h-full top-0 left-0 z-[1]">
          <Image src={Bgimage} alt="Bg Image" className="w-full h-full" />
       </div>
@@ -143,7 +143,7 @@ const Career = () => {
           </div>
 
           {/* Right Side Accordion */}
-          <div className="lg:max-w-[703px] flex flex-col gap-5 w-full">
+          <div className="lg:max-w-[703px] 2xl:max-w-[960px] flex flex-col gap-5 w-full">
             {accordionData.map((item, index) => (
               <div
                 key={index}

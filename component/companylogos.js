@@ -4,11 +4,11 @@ import Link from "next/link";
 const companylogos = () => {
   return (
     <div className="px-20px pb-[38px] ">
-    <div className="bg-white py-6 px-4 rounded-md shadow-lg border border-[#C1C1C1] max-w-[1040px]  m-auto">
+    <div className="bg-white py-6 px-4 rounded-md shadow-lg border border-[#C1C1C1] max-w-[1040px] 2xl:max-w-[1400px]  m-auto">
     <div className="text-center text-base text-black font-normal mb-8">
       Trusted by learners with support from
     </div>
-    <div className="flex justify-center items-center flex-wrap gap-8">
+    <div className="flex justify-center 2xl:justify-around items-center flex-wrap gap-8">
       <div className="flex">
         <svg width="190" height="78" viewBox="0 0 190 78" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M61.1031 36.849H51.9296C51.687 36.849 51.506 37.03 51.506 37.2727V41.754C51.506 41.9967 51.687 42.1777 51.9296 42.1777H55.502V47.749C55.502 47.749 54.6845 48.0215 52.4746 48.0215C49.871 48.0215 46.2071 47.0529 46.2071 39.029C46.2071 30.9753 50.0221 29.945 53.5945 29.945C56.6835 29.945 58.0141 30.49 58.8635 30.7625C59.136 30.854 59.3787 30.5815 59.3787 30.3388L60.4091 26.0086C60.4091 25.8873 60.3793 25.7659 60.2579 25.6765C59.9258 25.4338 57.8054 24.2544 52.5066 24.2544C46.3881 24.2544 40.1206 26.858 40.1206 39.3632C40.1206 51.8684 47.2971 53.7461 53.3518 53.7461C58.3483 53.7461 61.4054 51.5959 61.4054 51.5959C61.5268 51.5363 61.5566 51.3532 61.5566 51.2638V37.3067C61.5566 37.0321 61.3458 36.849 61.1031 36.849Z" fill="#161312"/>
