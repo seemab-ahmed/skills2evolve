@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import Bgimage from "../Images/bgimage.png";
+import Image from "next/image";
 const accordionData = [
   {
     icon: (
@@ -124,9 +125,13 @@ const Career = () => {
   };
 
   return (
-    <div className="pb-[60px]">
-      <div className="bg-[#242F3B] text-white md:pt-[63px] md:px-[40px] px-[20px] md:pb-[71px] py-[50px] relative max-w-[1040px] m-auto rounded-2xl">
-        <div className="flex flex-col lg:flex-row gap-5">
+    <div className="pb-[60px] ">
+  
+      <div className="bg-[#242F3B]  text-white md:pt-[63px] md:px-[40px] px-[20px] md:pb-[71px] py-[50px] relative max-w-[1040px] m-auto rounded-2xl">
+      <div className="absolute w-fit h-full top-0 left-0 z-[1]">
+         <Image src={Bgimage} alt="Bg Image" className="w-full h-full" />
+      </div>
+        <div className="flex flex-col lg:flex-row gap-5 relative z-20">
           {/* Left Side */}
           <div className="lg:max-w-[340px] w-full">
             <span className="m-auto bg-white text-sm leading-5 sm:mb-2 mb-4 font-semibold  text-[#1B5795] px-4 py-1 rounded-full inline-block border border-[#CED7FF]">
@@ -142,11 +147,11 @@ const Career = () => {
             {accordionData.map((item, index) => (
               <div
                 key={index}
-                className="md:p-6 pr-6 pl-3 py-6 bg-white text-black rounded-lg shadow-md transition-all duration-300"
+                className="md:p-6 pr-6 pl-3 cursor-pointer py-6 bg-white text-black rounded-lg shadow-md transition-all duration-300"
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full flex justify-between  text-left items-center"
+                  className="w-full flex justify-between cursor-pointer text-left items-center"
                 >
                   <div className="flex md:gap-6 gap-3">
                      <div>{item.icon}</div>

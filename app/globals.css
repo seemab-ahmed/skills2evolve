@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* --foreground: #171717; */
   --font-sans: var(--font-inter);
 }
 
@@ -41,7 +41,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #ffff;
   color: var(--foreground);
   font-family: 'Inter';
 }
