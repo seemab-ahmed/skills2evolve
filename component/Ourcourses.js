@@ -3,6 +3,8 @@ import Image from "next/image";
 import women from '../Images/women.png'
 import Coursebg from '../Images/course-bg.png'
 import Courseright from '../Images/course-right.png'
+import Icon1 from '../Images/icon1.png'
+import Icon2 from '../Images/icon2.png'
 import Link from "next/link";
 const Ourcourses = () => {
   return (
@@ -30,7 +32,21 @@ const Ourcourses = () => {
               alt="Student"
               className=" relative flex z-10 w-full h-auto"
             />
-            <div className="absolute bottom-0 w-full max-w-[73%] left-0   h-[70%] bg-[#FB971B] -z-0 rounded-lg"></div>
+            <div className="absolute bottom-0 w-full max-w-[73%] left-0   h-[70%] bg-[#FB971B] z-[1] rounded-lg"></div>
+            <div className=" w-[77px] h-[77px] flex absolute top-[25%] right-[17%]"> 
+              <Image
+                src={Icon1}
+                alt="Icon"
+                 className=" w-full h-full"
+              />
+            </div>
+            <div className="w-[77px] h-[77px] flex absolute top-[21%] right-[20%] z-[2]"> 
+              <Image
+                src={Icon2}
+                alt="Icon"
+                className=" w-full h-full"
+              />
+            </div>
           </div>
 
           <div className="md:max-w-[549px] w-full lg:ml-[-10px] mb-5 pt-5">

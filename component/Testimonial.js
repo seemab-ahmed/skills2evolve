@@ -35,8 +35,8 @@ const Testimonials = () => {
   const splideRef = useRef(null);
 
   return (
-    <div className="pb-[68px]">
-      <div className="max-w-[1080px] 2xl:max-w-[1440px] m-auto ">
+    <div className="pb-[28px] testimonial_section">
+      <div className="max-w-[1150px] 2xl:max-w-[1500x] m-auto ">
         <div className="px-5 text-center mb-[9px] max-w-[553px] m-auto">
           <span className="m-auto bg-white text-sm leading-5 sm:mb-2 mb-4 font-semibold  text-[#1B5795] px-4 py-1 rounded-full inline-block border border-[#CED7FF]">
             TESTIMONIALS
@@ -46,59 +46,61 @@ const Testimonials = () => {
           </h2>
         </div>
         <div className="relative ">
-          <Splide
-            options={{
-              type: 'loop',
-              perPage: 3,
-              arrows: false, 
-              pagination: false,
-              autoplay: false,
-              breakpoints: {
-                1024: { perPage: 2 },
-                640: { perPage: 1 },
-              },
-            }}
-            aria-label="Testimonials"
-            ref={splideRef}
-          >
-            {testimonials.map((testimonial, index) => (
-              <SplideSlide key={index} >
-                <div className="bg-white rounded-xl shadow-lg p-6 h-full mx-5">
-                  <div className="flex gap-[10px] items-center border-b border-[#E3E3E3] pb-6 mb-6">
-                    <div className="flex max-w-[48px] w-full h-auto">
-                      <Image src={Cardimage} alt="Logo" className="w-full h-auto" />
+          <div className=" max-w-[1080px] 2xl:max-w-[1440px] m-auto ">
+            <Splide
+              options={{
+                type: 'loop',
+                perPage: 3,
+                arrows: false, 
+                pagination: false,
+                autoplay: false,
+                breakpoints: {
+                  1024: { perPage: 2 },
+                  640: { perPage: 1 },
+                },
+              }}
+              aria-label="Testimonials"
+              ref={splideRef}
+            >
+              {testimonials.map((testimonial, index) => (
+                <SplideSlide key={index}  >
+                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mx-5">
+                    <div className="flex gap-[10px] items-center border-b border-[#E3E3E3] pb-6 mb-6">
+                      <div className="flex max-w-[48px] w-full h-auto">
+                        <Image src={Cardimage} alt="Logo" className="w-full h-auto" />
+                      </div>
+                      <div className="flex items-start flex-col">
+                        <h3 className="font-semibold text-[20px] leading-[36px] text-[#1E1E1E]">{testimonial.name}</h3>
+                        <p className="text-left text-[16px] leading-7 font-normal text-[#707070]">{testimonial.title}</p>
+                      </div>
                     </div>
-                    <div className="flex items-start flex-col">
-                      <h3 className="font-semibold text-[20px] leading-[36px] text-[#1E1E1E]">{testimonial.name}</h3>
-                      <p className="text-left text-[16px] leading-7 font-normal text-[#707070]">{testimonial.title}</p>
-                    </div>
+                    <p className="text-left text-[16px] leading-7 font-normal text-[#707070]">{testimonial.quote}</p>
                   </div>
-                  <p className="text-left text-[16px] leading-7 font-normal text-[#707070]">{testimonial.quote}</p>
-                </div>
-              </SplideSlide>
-            ))}
-          
-          </Splide>
-
+                </SplideSlide>
+              ))}
+            
+            </Splide>
+            
+          </div>
           {/* Custom Buttons */}
-              <div className="flex justify-between absolute top-0 bottom-0 h-fit w-full px-2 m-auto">
-              <button
-                className="w-8 h-8 flex items-center justify-center border border-[#1717441A] cursor-pointer text-[#1B5795] hover:text-[#fff] transition-all duration-500 ease-in-out shadow-md rounded-full hover:bg-[#FB971B]"
-                onClick={() => splideRef.current?.splide?.go('<')}
-              >
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.449 1.22266L0.671224 4.00043M0.671224 4.00043L3.449 6.77821M0.671224 4.00043H7.33789" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <button
-                className="w-8 h-8 flex items-center justify-center border border-[#1717441A] cursor-pointer text-[#1B5795] hover:text-[#fff] transition-all duration-500 ease-in-out rounded-full hover:bg-[#FB971B]"
-                onClick={() => splideRef.current?.splide?.go('>')}
-              >
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.56028 1.22168L7.33805 3.99946M7.33805 3.99946L4.56028 6.77723M7.33805 3.99946H0.671387" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </div>
+          <div className="flex justify-between absolute top-0 bottom-0 h-fit w-full px-2 m-auto">
+                <button
+                  className="w-8 h-8 flex items-center justify-center border border-[#1717441A] cursor-pointer text-[#1B5795] hover:text-[#fff] transition-all duration-500 ease-in-out shadow-md rounded-full hover:bg-[#FB971B]"
+                  onClick={() => splideRef.current?.splide?.go('<')}
+                >
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.449 1.22266L0.671224 4.00043M0.671224 4.00043L3.449 6.77821M0.671224 4.00043H7.33789" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <button
+                  className="w-8 h-8 flex items-center justify-center border border-[#1717441A] cursor-pointer text-[#1B5795] hover:text-[#fff] transition-all duration-500 ease-in-out rounded-full hover:bg-[#FB971B]"
+                  onClick={() => splideRef.current?.splide?.go('>')}
+                >
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.56028 1.22168L7.33805 3.99946M7.33805 3.99946L4.56028 6.77723M7.33805 3.99946H0.671387" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              </div>
         </div>
       </div>
     </div>
@@ -106,20 +108,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-
-
-
-// <div className="flex justify-between absolute top-0 bottom-0 h-fit ">
-// <button className="w-8 h-8  flex items-center justify-center border border-[#1717441A] cursor-pointer text-[#1B5795] hover:text-[#fff] transition-all duration-500  ease-in-out shadow-md rounded-full hover:bg-[#FB971B] ">
-//   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-//   <path d="M3.449 1.22266L0.671224 4.00043M0.671224 4.00043L3.449 6.77821M0.671224 4.00043H7.33789" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-//   </svg>
-// </button>
-// <button className=" w-8 h-8  flex items-center justify-center  border border-[#1717441A] cursor-pointer text-[#1B5795] hover:text-[#fff] transition-all duration-500  ease-in-out  rounded-full hover:bg-[#FB971B] ">
-//   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-//   <path d="M4.56028 1.22168L7.33805 3.99946M7.33805 3.99946L4.56028 6.77723M7.33805 3.99946H0.671387" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-//   </svg>
-
-// </button>
-// </div>
