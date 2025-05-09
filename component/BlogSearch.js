@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 
-const BlogSearch = ({ onSearch }) => {
+const BlogSearch = ({ onSearch, heading = "Our Blog", description = "Anticipate emerging trends, adapt with confidence, and unlock new opportunities in a constantly changing world" }) => {
   const [searchTerm, setSearchTerm] = useState('');
   
   const handleSubmit = (e) => {
@@ -12,11 +12,11 @@ const BlogSearch = ({ onSearch }) => {
   };
   
   return (
-    <div className="max-w-[634px] mx-auto pt-[60px] pb-[30px] px-5">
+    <div className="max-w-[779px] mx-auto pt-[60px] pb-[30px] px-5">
       <div className="text-center mb-8">
-        <h2 className="text-[30px] md:text-[44px] leading-[56px] font-semibold text-gray-900 mb-2">Our Blog</h2>
+        <h2 className="text-[30px] md:text-[44px] leading-[56px] font-semibold text-gray-900 mb-2">  {heading}</h2>
         <p className="text-[#707070] text-[16px] leading-[24px] font-normal">
-          Anticipate emerging trends, adapt with confidence, and unlock new opportunities in a constantly changing world
+            {description}
         </p>
       </div>
       

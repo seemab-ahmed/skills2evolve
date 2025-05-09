@@ -1,18 +1,18 @@
-
-const Banner = () => {
+import Link from "next/link";
+const Coursebanner = () => {
     return (
       <div className="mt-[100px]">
         <div className="max-w-[1040px] 2xl:max-w-[1440px]  m-auto">
-          <div className=" relative bg-gray-900  px-[20px] pt-5 pb-[24px] md:px-[50px] overflow-hidden rounded-[4px]">
+          <div className=" flex justify-between items-center relative bg-gray-900  px-[20px] p-[24px] md:px-[50px] overflow-hidden rounded-[4px]">
             <div className="relative z-10 ">
               <h1 className="leading-[44px] text-[32px] md:text- font-semibold text-[#FB971B] mb-1">
-                Skills2Evolve <span className="text-white">Blog</span>
+                Online Course  <span className="text-white">With Better Approach</span>
               </h1>
               <p className="text-white  md:text-[16px]">
-                Insights, guides and best practices to <span className="font-semibold">Learn</span> . <span className="font-semibold">Evolve</span> . <span className="font-semibold">Secure your future</span> 
+                 Join thousand of graduates entering high-paying tech career.
               </p>
             </div>
-            
+            <Link href={"/"}  className=" relative z-10 bg-[#FB971B]  px-[16px] py-2 rounded-lg text-base leading-6 text-[#fff] ">Enroll Now! </Link>
             {/* Background gradient overlay */}
             <div  className="absolute bg-[#242F3B] "/>
               <div className="absolute lg:right-30 2xl:right-[33%] right-5 top-0 w-full h-full flex justify-end items-center">
@@ -26,4 +26,4 @@ const Banner = () => {
     );
   };
   
-  export default Banner;
+  export default Coursebanner;

@@ -12,7 +12,7 @@ const Header = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Practice', path: '/' },
-    { name: 'About', path: '/' },
+    { name: 'About', path: '/all-courses' },
     { name: 'Blogs', path: '/blog' }
   ];
   const [menuOpen, setMenuOpen] = useState(false);

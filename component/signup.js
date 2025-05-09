@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function contactform() {
+export default function contactform({ heading = "Sign in" }) {
   return (
     <div className='md:pt-[140px] pb-[40px] md:pb-[70px] pt-[100px]'>
         <div className="bg-[#F7F7F7] max-w-[686px] m-auto rounded-[12px] py-[50px] px-5">
         <div className=" max-w-[508px] m-auto">
             <h2 className="text-center text-2xl font-normal text-[#000365] mb-[30px]">
-                Welcome to <span className="text-[#FB971B] font-semibold">Skills 2 Evolve</span>
+            {heading} <span className="text-[#FB971B] font-semibold">Skills 2 Evolve</span>
             </h2>
         
             <div>
