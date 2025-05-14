@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 const Future = () => {
   return (
-     <div>
-        <div className="relative m-auto  bg-[#242F3B] lg:pr-[37px] pr-[20px] lg:pl-[57px] pl-[20px] pt-[87px] pb-[88px] rounded-2xl  max-w-[1040px] 2xl:max-w-[1400px]">
+     <div className="px-5">
+        <div className="relative m-auto  bg-[#242F3B] lg:pr-[37px] pr-[20px] lg:pl-[57px] pl-[20px] pt-[87px] pb-[88px] rounded-2xl sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] ">
          <div className="text-col md:max-w-[641px] w-full ">
             <h2 className="text-[30px] lg:text-[44px] lg:leading-14 leading-10 font-semibold font-[Inter] text-[#fff]"> Ready To Build <span className="text-[#FB971B]">Your Future</span></h2>
             <p className="mb-6 text-[16px] font-[Inter] font-normal leading-6 text-[#FFFFFFA3]">Choose your learning path and start today</p>

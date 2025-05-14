@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const companylogos = () => {
   return (
-    <div className="px-20px pb-[38px] ">
-    <div className="bg-white py-6 px-4 rounded-md shadow-lg border border-[#C1C1C1] max-w-[1040px] 2xl:max-w-[1400px]  m-auto">
+    <div className="px-5 pb-[38px] ">
+    <div className="bg-white py-6 px-4 rounded-md shadow-lg border border-[#C1C1C1] sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px]   m-auto">
     <div className="text-center text-base text-black font-normal mb-8">
       Trusted by learners with support from
     </div>

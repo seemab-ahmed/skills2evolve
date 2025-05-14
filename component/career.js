@@ -8,8 +8,8 @@ import Carrerenter from '../Images/carrer-center.png'
 import Image from "next/image";
 const career = () => {
   return (
-    <div>
-    <div className="bg-[#242F3B] text-white md:pt-[90px] md:pb-[73px] py-[50px] relative max-w-[1040px] 2xl:max-w-[1400px] m-auto rounded-2xl">
+    <div className="px-5">
+    <div className="bg-[#242F3B] text-white md:pt-[90px] md:pb-[73px] py-[50px] relative sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] m-auto rounded-2xl">
       <div className="absolute md:top-[55px] top-[20px] md:right-[59px] right-[30px]">
           <div className=" w-[77px] h-[77px] flex "> 
               <Image

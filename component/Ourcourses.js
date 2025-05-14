@@ -8,7 +8,8 @@ import Icon2 from '../Images/icon2.png'
 import Link from "next/link";
 const Ourcourses = () => {
   return (
-    <div className=" relative pb-[56px] px-5 m-auto max-w-[1080px] 2xl:max-w-[1440px] bg-white">
+ <div className="px-5">
+       <div className=" relative pb-[56px]  m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px]  bg-white">
       <div className="absolute top-0 h-full left-[-5%] z-10">
       <Image
               src={Coursebg}
@@ -106,6 +107,7 @@ const Ourcourses = () => {
         </div>
       </div>
     </div>
+ </div>
   );
 };
 

@@ -33,8 +33,8 @@ const Footer = () => {
         }
       ];
   return (
-     <div>
-        <div className="max-w-[1080px] 2xl:max-w-[1440px] m-auto px-5 ">
+     <div className="px-5">
+        <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px]  m-auto ">
             <div className="bg-white flex-col flex md:flex-row justify-between gap-6  pt-[66px] pb-[44px]">
                 {/* Left Column */}
                 <div className="md:max-w-[398px] w-full">

@@ -125,9 +125,9 @@ const Career = () => {
   };
 
   return (
-    <div className="pb-[60px] ">
+    <div className="pb-[60px] px-5">
   
-      <div className="bg-[#242F3B]  text-white md:pt-[63px] md:px-[40px] px-[20px] md:pb-[71px] py-[50px] relative max-w-[1040px] 2xl:max-w-[1400px] m-auto rounded-2xl">
+      <div className="bg-[#242F3B]  text-white md:pt-[63px] md:px-[40px] px-[20px] md:pb-[71px] py-[50px] relative sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] m-auto rounded-2xl">
       <div className="absolute w-fit h-full top-0 left-0 z-[1]">
          <Image src={Bgimage} alt="Bg Image" className="w-full h-full" />
       </div>
@@ -155,7 +155,7 @@ const Career = () => {
                 >
                   <div className="flex md:gap-6 gap-3">
                      <div>{item.icon}</div>
-                     <span className="md:text-[24px] text-[18px] md:leading-[36px] leading-[25px] font-semibold text-[#1E1E1E]" >{item.title}</span>
+                     <span className="md:text-[24px] text-[14px] md:leading-[36px] leading-[20px] font-semibold text-[#1E1E1E]" >{item.title}</span>
                   </div>
                   <span className="">
                         {activeIndex === index ? (

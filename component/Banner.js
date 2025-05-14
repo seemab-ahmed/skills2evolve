@@ -2,7 +2,7 @@
 const Banner = () => {
     return (
       <div className="mt-[100px]">
-        <div className="max-w-[1040px] 2xl:max-w-[1440px]  m-auto">
+        <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px]   m-auto">
           <div className=" relative bg-gray-900  px-[20px] pt-5 pb-[24px] md:px-[50px] overflow-hidden rounded-[4px]">
             <div className="relative z-10 ">
               <h1 className="leading-[44px] text-[32px] md:text- font-semibold text-[#FB971B] mb-1">

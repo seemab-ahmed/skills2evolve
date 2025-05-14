@@ -4,7 +4,8 @@ import bannerimage from "../Images/bannerright.png"
 import Image from "next/image"; 
 const Hero = () => {
   return (
-    <div className="bg-white pt-[70px]  pb-2 m-auto max-w-[1080px] 2xl:max-w-[1440px] px-5">
+  <div className="px-5">
+       <div className="bg-white pt-[70px]  pb-2 m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] ">
       <div className="flex md:flex-row flex-col gap-10 md:gap-0 ">
         {/* Text Section */}
         <div className="space-y-6 w-full lg:pt-[90px] pt-[30px]  max-w-[630px] 2xl:max-w-[800px] relative z-10">
@@ -46,11 +47,12 @@ const Hero = () => {
         </div>
 
         {/* Image/Icons Section */}
-        <div className="w-full max-w-[680px] lg:ml-[-250px] 2xl:ml-[-65px]">
+        <div className="w-full max-w-[680px] lg:ml-[-170px] ">
            <Image src={bannerimage} alt="Logo" className="w-full h-auto " />
         </div>
       </div>
     </div>
+  </div>
   );
 };
 

@@ -35,8 +35,8 @@ const Testimonials = () => {
   const splideRef = useRef(null);
 
   return (
-    <div className="pb-[28px] testimonial_section">
-      <div className="max-w-[1150px] 2xl:max-w-[1500x] m-auto ">
+    <div className="pb-[28px] testimonial_section px-5">
+      <div className="sm:max-w-[640px] md:max-w-[820px]  lg:max-w-[1060px] xl:max-w-[1240px] m-auto ">
         <div className="px-5 text-center mb-[9px] max-w-[553px] m-auto">
           <span className="m-auto bg-white text-sm leading-5 sm:mb-2 mb-4 font-semibold  text-[#1B5795] px-4 py-1 rounded-full inline-block border border-[#CED7FF]">
             TESTIMONIALS
@@ -46,7 +46,7 @@ const Testimonials = () => {
           </h2>
         </div>
         <div className="relative ">
-          <div className=" max-w-[1080px] 2xl:max-w-[1440px] m-auto ">
+          <div className=" sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1500x] m-auto ">
             <Splide
               options={{
                 type: 'loop',
@@ -64,7 +64,7 @@ const Testimonials = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <SplideSlide key={index}  >
-                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mx-5">
+                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mr-5 ml-3">
                     <div className="flex gap-[10px] items-center border-b border-[#E3E3E3] pb-6 mb-6">
                       <div className="flex max-w-[48px] w-full h-auto">
                         <Image src={Cardimage} alt="Logo" className="w-full h-auto" />
