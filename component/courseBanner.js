@@ -2,7 +2,7 @@ import Link from "next/link";
 const Coursebanner = () => {
     return (
       <div className="mt-[100px] px-5">
-        <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px]   m-auto">
+        <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px]   m-auto">
           <div className=" flex justify-between items-center relative bg-gray-900  px-[20px] p-[24px] md:px-[50px] overflow-hidden rounded-[4px]">
             <div className="relative z-10 ">
               <h1 className="leading-[44px] text-[32px] md:text- font-semibold text-[#FB971B] mb-1">

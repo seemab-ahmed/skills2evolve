@@ -387,7 +387,7 @@ const BlogList = ({ searchTerm = '' }) => {
 
   return (
    <div className="px-5">
-      <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] m-auto">
+      <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px] m-auto">
       <div className=" relative flex flex-col md:flex-row gap-6 border-t-2 border-[#D6D6D6] pt-[30px] md:pb-[100px] pb-[50px]">
         <div className="md:max-w-[774px] xl:max-w-[1050px] w-full flex flex-col gap-9">
           {currentPosts.length > 0 ? (

@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
   <div className="px-5">
-       <div className="bg-white pt-[70px]  pb-2 m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] ">
+       <div className="bg-white pt-[70px]  pb-2 m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px] ">
       <div className="flex md:flex-row flex-col gap-10 md:gap-0 ">
         {/* Text Section */}
         <div className="space-y-6 w-full lg:pt-[90px] pt-[30px]  max-w-[630px] 2xl:max-w-[800px] relative z-10">
@@ -15,7 +15,7 @@ const Hero = () => {
           <h1 className=" lg:max-w-[376px] max-w-full lg:text-6xl text-4xl md:leading-[72px] leading-[60px] mb-3   text-[#1E1E1E] font-bold ">
             Master In-Demand Tech Skills.
           </h1>
-          <p className=" max-w-full 2xl:max-w-full md:max-w-[498px] text-base leading-6 mb-3 font-normal   text-[#707070]">
+          <p className=" max-w-full md:max-w-[498px] lg:max-w-[530px] text-base leading-6 mb-3 font-normal   text-[#707070]">
             Whether you’re starting fresh or upskilling, unlock the tools,
             mindset, and mentorship to transform your career.
           </p>
@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
 
         {/* Image/Icons Section */}
-        <div className="w-full max-w-[680px] lg:ml-[-170px] ">
+        <div className="w-full max-w-[680px] lg:ml-[-139px] ">
            <Image src={bannerimage} alt="Logo" className="w-full h-auto " />
         </div>
       </div>

@@ -36,7 +36,7 @@ const Testimonials = () => {
 
   return (
     <div className="pb-[28px] testimonial_section px-5">
-      <div className="sm:max-w-[640px] md:max-w-[820px]  lg:max-w-[1060px] xl:max-w-[1240px] m-auto ">
+      <div className="sm:max-w-[640px] md:max-w-[820px]  lg:max-w-[1060px] xl:max-w-[1270px] m-auto ">
         <div className="px-5 text-center mb-[9px] max-w-[553px] m-auto">
           <span className="m-auto bg-white text-sm leading-5 sm:mb-2 mb-4 font-semibold  text-[#1B5795] px-4 py-1 rounded-full inline-block border border-[#CED7FF]">
             TESTIMONIALS

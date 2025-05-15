@@ -9,7 +9,7 @@ import Link from "next/link";
 const Ourcourses = () => {
   return (
  <div className="px-5">
-       <div className=" relative pb-[56px]  m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px]  bg-white">
+       <div className=" relative pb-[56px]  m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px]  bg-white">
       <div className="absolute top-0 h-full left-[-5%] z-10">
       <Image
               src={Coursebg}

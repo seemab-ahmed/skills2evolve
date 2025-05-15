@@ -103,7 +103,7 @@ export default function Courcestabs() {
 
   return (
   <div className="px-5">
-      <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px]  m-auto pb-[70px] pt-[20px]">
+      <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px]  m-auto pb-[70px] pt-[20px]">
       <div className="flex gap-6 justify-center mb-[30px] pb-[15px] border-b border-[#D5D4DF] ">
         {['Cloud Computing', 'Cybersecurity'].map((category) => (
           <button
