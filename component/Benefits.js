@@ -147,15 +147,15 @@ const Career = () => {
             {accordionData.map((item, index) => (
               <div
                 key={index}
-                className="md:p-6 pr-6 pl-3 cursor-pointer py-6 bg-white text-black rounded-lg shadow-md transition-all duration-300"
+                className="md:p-6 pr-6 pl-3 cursor-pointer py-6 bg-white text-black rounded-lg shadow-md hover:bg-[#FB971B] transition-all ease-in-out duration-500 group"
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full flex justify-between cursor-pointer text-left items-center"
+                  className="w-full flex justify-between cursor-pointer text-left items-center group-hover:text-white"
                 >
                   <div className="flex md:gap-6 gap-3">
                      <div>{item.icon}</div>
-                     <span className="md:text-[24px] text-[14px] md:leading-[36px] leading-[20px] font-semibold text-[#1E1E1E]" >{item.title}</span>
+                     <span className="md:text-[24px] text-[14px] md:leading-[36px] leading-[20px] font-semibold text-[#1E1E1E] " >{item.title}</span>
                   </div>
                   <span className="">
                         {activeIndex === index ? (

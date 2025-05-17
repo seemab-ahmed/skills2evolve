@@ -64,17 +64,17 @@ const Testimonials = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <SplideSlide key={index}  >
-                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mr-5 ml-3">
+                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mr-5 ml-3 hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
                     <div className="flex gap-[10px] items-center border-b border-[#E3E3E3] pb-6 mb-6">
                       <div className="flex max-w-[48px] w-full h-auto">
                         <Image src={Cardimage} alt="Logo" className="w-full h-auto" />
                       </div>
                       <div className="flex items-start flex-col">
-                        <h3 className="font-semibold text-[20px] leading-[36px] text-[#1E1E1E]">{testimonial.name}</h3>
-                        <p className="text-left text-[16px] leading-7 font-normal text-[#707070]">{testimonial.title}</p>
+                        <h3 className="font-semibold text-[20px] leading-[36px] text-[#1E1E1E] group-hover:text-white">{testimonial.name}</h3>
+                        <p className="text-left text-[16px] leading-7 font-normal text-[#707070] group-hover:text-white">{testimonial.title}</p>
                       </div>
                     </div>
-                    <p className="text-left text-[16px] leading-7 font-normal text-[#707070]">{testimonial.quote}</p>
+                    <p className="text-left text-[16px] leading-7 font-normal text-[#707070] group-hover:text-white">{testimonial.quote}</p>
                   </div>
                 </SplideSlide>
               ))}

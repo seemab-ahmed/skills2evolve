@@ -84,13 +84,13 @@ const Header = () => {
         <div className=" hidden lg:flex  items-center gap-4">
           <Link 
             href="/login" 
-            className=" text-[14px] leading-5 font-[Inter] font-medium  px-4 py-2 text-white bg-[#1B5795] rounded-[8px] hover:bg-blue-800 transition-colors"
+            className=" text-[14px] leading-5 font-[Inter] font-medium  px-4 py-2 text-white bg-[#1B5795] rounded-[8px] hover:bg-[#FB971B] transition-all ease-in-out duration-500"
           >
             Log in
           </Link>
           <Link 
             href="/signup" 
-            className="text-[14px] leading-5 font-[Inter] font-medium  px-4 py-2 text-white bg-[#FB971B] rounded-[8px] hover:bg-orange-600 transition-colors"
+            className="text-[14px] leading-5 font-[Inter] font-medium  px-4 py-2 text-white bg-[#FB971B] rounded-[8px] hover:bg-[#1B5795]  transition-all ease-in-out duration-500"
           >
             Join now
           </Link>

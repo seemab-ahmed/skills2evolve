@@ -44,7 +44,7 @@ const BlogSearch = ({ onSearch, heading = "Our Blog", description = "Anticipate 
         </div>
         <button 
           type="submit" 
-          className="bg-[#1B5795] hover:bg-blue-800 text-white px-9 py-3 rounded-lg transition-colors"
+          className="bg-[#1B5795]  text-white px-9 py-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 cursor-pointer"
         >
           Search
         </button>

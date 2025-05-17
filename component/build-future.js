@@ -7,7 +7,7 @@ const Future = () => {
          <div className="text-col md:max-w-[641px] w-full ">
             <h2 className="text-[30px] lg:text-[44px] lg:leading-14 leading-10 font-semibold font-[Inter] text-[#fff]"> Ready To Build <span className="text-[#FB971B]">Your Future</span></h2>
             <p className="mb-6 text-[16px] font-[Inter] font-normal leading-6 text-[#FFFFFFA3]">Choose your learning path and start today</p>
-             <Link href={"/"} className="text-[14px] font-[Inter] font-medium leading-6 text-[#fff] rounded-[8px] bg-[#FB971B] px-6 py-2" >Get Started Now</Link>
+             <Link href={"/"} className="text-[14px] font-[Inter] font-medium leading-6 text-[#fff] rounded-[8px] bg-[#FB971B] px-6 py-2 hover:bg-[#1B5795]  transition-all ease-in-out duration-500" >Get Started Now</Link>
          </div>
          <div className="sm:max-w-[609px] w-full absolute top-0 bottom-0 h-fit m-auto md:right-[37px] right-[20px]">
            <svg className="h-full w-full" viewBox="0 0 609 216" fill="none" xmlns="http://www.w3.org/2000/svg">

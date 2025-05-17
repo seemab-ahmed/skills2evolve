@@ -5,31 +5,31 @@ import FeaturedPost from "../Images/featured-post.png";
 import Link from "next/link";
 
 const BlogCard = ({ image, title, date, readTime, excerpt }) => (
-  <div className="flex flex-col lg:flex-row items-start gap-4 border-b-2 border-[#D6D6D6] pb-6">
+  <div className="flex flex-col lg:flex-row items-start gap-4 border-b-2 border-[#D6D6D6] pb-6 ">
     <Image
       src={image}
       alt={title}
       className="w-full max-w-full lg:max-w-[242px] 2xl:max-w-[375px] h-48 2xl:h-52 object-cover rounded-lg"
     />
     <div className="flex-1">
-      <h2 className="text-[18px] leading-[26px] font-[Inter] font-semibold mb-3.5">
+      <h2 className="text-[18px] leading-[26px] font-[Inter] font-semibold mb-3.5  ">
         {title}
       </h2>
       <div className="flex gap-10 items-center text-sm mb-2.5">
-        <span className="flex items-center gap-1.5 text-[#707070] text-[14px] font-[Inter] font-normal">
+        <span className="flex items-center gap-1.5 text-[#707070] text-[14px] font-[Inter] font-normal ">
           📅 {date}
         </span>
-        <span className="flex items-center gap-1.5 text-[#707070] text-[14px] font-[Inter] font-normal">
+        <span className="flex items-center gap-1.5 text-[#707070] text-[14px] font-[Inter] font-normal ">
           ⏱ {readTime} min read
         </span>
       </div>
-      <p className="text-[#707070] text-[14px] font-[Inter] font-normal mb-3">
+      <p className="text-[#707070] text-[14px] font-[Inter] font-normal mb-3 ">
         {excerpt}
       </p>
       <div className="flex gap-5 justify-between flex-wrap">
-        <button className="bg-[#1B5795] text-white text-[14px] font-[Inter] font-medium px-4 py-2 rounded-[8px] hover:bg-blue-700 transition">
+        <Link href="/" className="bg-[#1B5795] text-white text-[14px] font-[Inter] font-medium px-4 py-2 rounded-[8px] hover:bg-blue-700 transition">
           Read more
-        </button>
+        </Link>
         <ul className="flex gap-2 items-center">
           <li>
             <Link href={"/"}>
@@ -464,7 +464,7 @@ const BlogList = ({ searchTerm = '' }) => {
         {/* Right sidebar remains unchanged */}
         <div className=" sticky top-0 h-fit right_main_col flex flex-wrap md:flex-col gap-6 md:max-w-[242px]  2xl:max-w-[326px]  w-full">
           {/* Newsletter box */}
-          <div className="bg-[#CED7FF4D] px-[10px] py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full">
+          <div className="bg-[#CED7FF4D] px-[10px] py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:bg-amber-300">
             <div className="mx-auto rounded-full flex items-center justify-center">
               <span className="mb-2">
                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -493,7 +493,7 @@ const BlogList = ({ searchTerm = '' }) => {
           </div>
 
           {/* Featured Post 1 */}
-          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full">
+          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:bg-amber-300">
             <div className="relative">
               <Image src={FeaturedPost} alt="Cyber Threats 2025" className="w-full h-auto mb-[11px]" />
               <span className="absolute top-[5px] left-[6px] bg-[#FB971B] text-[12px] px-2 py-0.5 rounded font-normal text-white">
@@ -504,14 +504,14 @@ const BlogList = ({ searchTerm = '' }) => {
               <h4 className="text-[15px] text-[#1E1E1E] font-semibold mb-[11px] text-center">
                 Key Cyber Threats to Watch in 2025
               </h4>
-              <button className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-blue-700">
+              <Link href="/" className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-blue-700">
                 Read more
-              </button>
+              </Link>
             </div>
           </div>
 
           {/* Featured Post 2 */}
-          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full">
+          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full hover:bg-amber-300 transition-all ease-in-out duration-500">
             <Image src={FeaturedPost} alt="Voice Phishing Alert" className="w-full h-auto mb-[11px]" />
             <div className="pb-[12px]">
               <h4 className="text-[15px] text-[#1E1E1E] leading-[21px] font-semibold mb-2 text-center">
@@ -520,9 +520,9 @@ const BlogList = ({ searchTerm = '' }) => {
               <p className="text-[12px] text-[#707070] leading-[20px] font-normal mb-3 text-center">
                 Have you ever received a call from an unknown number and wondered who could be on the other end? It could be a vishing scam.
               </p>
-              <button className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-blue-700">
+              <Link href="/" className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-blue-700">
                 Read more
-              </button>
+              </Link>
             </div>
           </div>
 
