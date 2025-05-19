@@ -64,7 +64,7 @@ const Testimonials = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <SplideSlide key={index}  >
-                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mr-5 ml-3 hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
+                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mr-5 ml-3 hover:bg-[#FB971B] hover:shadow-2xl transition-all ease-in-out duration-500 group">
                     <div className="flex gap-[10px] items-center border-b border-[#E3E3E3] pb-6 mb-6">
                       <div className="flex max-w-[48px] w-full h-auto">
                         <Image src={Cardimage} alt="Logo" className="w-full h-auto" />

@@ -88,17 +88,17 @@ const career = () => {
 
              
                 <div className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
-                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  !text-[#1E1E1E] ">Transition</h4>
+                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Transition</h4>
                   <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  !text-[#707070] ">Apply your skills in real-world contexts</p>
                 </div>           
 
                 <div className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
-                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  !text-[#1E1E1E] ">Change</h4>
+                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Change</h4>
                   <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  !text-[#707070] ">Deepen your expertise and specialize</p>
                 </div>
           
                 <div className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
-                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  !text-[#1E1E1E] ">Career Support</h4>
+                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Career Support</h4>
                   <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  !text-[#707070] ">Get mentorship, resume help, and job guidance</p>
                 </div>
           
