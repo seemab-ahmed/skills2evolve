@@ -106,7 +106,7 @@ const Footer = () => {
                             <li key={index}>
                             <Link
                                 href={link.href}
-                                className="text-[16px] font-[Inter] leading-6 text-[#1E1E1E] font-normal"
+                                className="text-[16px] font-[Inter] leading-6 text-[#1E1E1E] font-normal hover:text-[#FB971B] "
                             >
                                 {link.text}
                             </Link>

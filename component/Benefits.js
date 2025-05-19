@@ -151,11 +151,11 @@ const Career = () => {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full flex justify-between cursor-pointer text-left items-center group-hover:text-white"
+                  className="w-full flex justify-between cursor-pointer text-left items-center "
                 >
                   <div className="flex md:gap-6 gap-3">
                      <div>{item.icon}</div>
-                     <span className="md:text-[24px] text-[14px] md:leading-[36px] leading-[20px] font-semibold text-[#1E1E1E] " >{item.title}</span>
+                     <span className="md:text-[24px] text-[14px] md:leading-[36px] leading-[20px] font-semibold text-[#1E1E1E] group-hover:text-[#fff] " >{item.title}</span>
                   </div>
                   <span className="">
                         {activeIndex === index ? (
@@ -179,10 +179,10 @@ const Career = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                             </svg>
                         )}
-                        </span>
+                   </span>
                 </button>
                 {activeIndex === index && (
-                  <div className="pl-[65px] md:pl-[75px] text-[14px] md:text-[16px] leading-[24px] font-normal text-[#707070]">
+                  <div className="pl-[65px] md:pl-[75px] text-[14px] md:text-[16px] leading-[24px] font-normal text-[#707070] group-hover:text-[#fff] ">
                     {item.content}
                   </div>
                 )}

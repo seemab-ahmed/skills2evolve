@@ -33,7 +33,7 @@ export default function contactform({ heading = "Sign in" }) {
 
                 <button
                     type="submit"
-                    className="mb-4 text-[16px] leading-[24px] font-medium w-full bg-[#1B5795] text-white py-2 rounded-lg hover:bg-blue-800 transition-all ease-in-out duration-500"
+                    className="mb-4 text-[16px] leading-[24px] font-medium w-full bg-[#1B5795] text-white py-2 rounded-lg hover:bg-[#FB971B] hover:text-white  cursor-pointer transition-all ease-in-out duration-500"
                 >
                     Submit
                 </button>
@@ -50,7 +50,7 @@ export default function contactform({ heading = "Sign in" }) {
                 </div>
 
                 <div className="flex flex-col gap-4 mb-[38px]">
-                    <button className=" text-[14px] leading-[20px] font-normal w-full flex items-center justify-center gap-2 border border-[#D1D5DB] bg-[#FFFFFF] rounded-lg py-3 px-7 hover:bg-gray-50 transition-all ease-in-out duration-500">
+                    <button className=" text-[14px] leading-[20px] font-normal w-full flex items-center justify-center gap-2 border border-[#D1D5DB] bg-[#FFFFFF] rounded-lg py-3 px-7 hover:bg-[#FB971B] hover:text-white  cursor-pointer transition-all ease-in-out duration-500">
                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.2509 10.6941C19.2509 9.97471 19.1913 9.44971 19.0624 8.90527H10.6794V12.1525H15.6C15.5009 12.9594 14.9652 14.1747 13.7747 14.9913L13.758 15.1L16.4085 17.1123L16.5921 17.1303C18.2786 15.6039 19.2509 13.358 19.2509 10.6941Z" fill="#4285F4"/>
                         <path d="M10.6789 19.25C13.0896 19.25 15.1133 18.4722 16.5915 17.1305L13.7741 14.9916C13.0201 15.5068 12.0082 15.8666 10.6789 15.8666C8.31779 15.8666 6.31385 14.3402 5.5995 12.2305L5.49479 12.2392L2.73874 14.3295L2.7027 14.4277C4.17093 17.286 7.1868 19.25 10.6789 19.25Z" fill="#34A853"/>
@@ -60,7 +60,7 @@ export default function contactform({ heading = "Sign in" }) {
                         Continue with Google
                     </button>
 
-                    <button className="text-[14px] leading-[20px] font-normal w-full flex items-center justify-center gap-2 border border-[#D1D5DB] bg-[#FFFFFF] rounded-lg py-3 px-7 hover:bg-gray-50 transition-all ease-in-out duration-500">
+                    <button className="text-[14px] leading-[20px] font-normal w-full flex items-center justify-center gap-2 border border-[#D1D5DB] bg-[#FFFFFF] rounded-lg py-3 px-7 hover:bg-[#FB971B] hover:text-white  cursor-pointer  transition-all ease-in-out duration-500">
                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_212_1159)">
                         <path d="M18.125 0.968822H1.875C1.5063 0.96507 1.15117 1.10774 0.887529 1.36551C0.623892 1.62329 0.473283 1.97513 0.46875 2.34382V18.6594C0.474103 19.0276 0.625072 19.3786 0.88862 19.6357C1.15217 19.8928 1.50683 20.0351 1.875 20.0313H18.125C18.4937 20.0342 18.8486 19.8911 19.1121 19.6332C19.3756 19.3752 19.5263 19.0235 19.5312 18.6548V2.33913C19.5247 1.97152 19.3733 1.62136 19.1099 1.36477C18.8466 1.10817 18.4927 0.965881 18.125 0.968822Z" fill="#0076B2"/>
@@ -76,7 +76,7 @@ export default function contactform({ heading = "Sign in" }) {
                         Continue with LinkedIn
                     </button>
 
-                    <button className="text-[14px] leading-[20px] font-normal w-full flex items-center justify-center gap-2 border border-[#D1D5DB] bg-[#FFFFFF] rounded-lg py-3 px-7 hover:bg-gray-50 transition-all ease-in-out duration-500">
+                    <button className=" cursor-pointer  text-[14px] leading-[20px] font-normal w-full flex items-center justify-center gap-2 border border-[#D1D5DB] bg-[#FFFFFF] rounded-lg py-3 px-7 hover:bg-[#FB971B] hover:text-white transition-all ease-in-out duration-500">
                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_212_1164)">
                         <path d="M10.5 0.5C4.975 0.5 0.5 4.975 0.5 10.5C0.5 14.925 3.3625 18.6625 7.3375 19.9875C7.8375 20.075 8.025 19.775 8.025 19.5125C8.025 19.275 8.0125 18.4875 8.0125 17.65C5.5 18.1125 4.85 17.0375 4.65 16.475C4.5375 16.1875 4.05 15.3 3.625 15.0625C3.275 14.875 2.775 14.4125 3.6125 14.4C4.4 14.3875 4.9625 15.125 5.15 15.425C6.05 16.9375 7.4875 16.5125 8.0625 16.25C8.15 15.6 8.4125 15.1625 8.7 14.9125C6.475 14.6625 4.15 13.8 4.15 9.975C4.15 8.8875 4.5375 7.9875 5.175 7.2875C5.075 7.0375 4.725 6.0125 5.275 4.6375C5.275 4.6375 6.1125 4.375 8.025 5.6625C8.825 5.4375 9.675 5.325 10.525 5.325C11.375 5.325 12.225 5.4375 13.025 5.6625C14.9375 4.3625 15.775 4.6375 15.775 4.6375C16.325 6.0125 15.975 7.0375 15.875 7.2875C16.5125 7.9875 16.9 8.875 16.9 9.975C16.9 13.8125 14.5625 14.6625 12.3375 14.9125C12.7 15.225 13.0125 15.825 13.0125 16.7625C13.0125 18.1 13 19.175 13 19.5125C13 19.775 13.1875 20.0875 13.6875 19.9875C15.673 19.3178 17.3983 18.0421 18.6205 16.34C19.8427 14.638 20.5 12.5954 20.5 10.5C20.5 4.975 16.025 0.5 10.5 0.5Z" fill="black"/>

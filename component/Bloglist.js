@@ -5,11 +5,11 @@ import FeaturedPost from "../Images/featured-post.png";
 import Link from "next/link";
 
 const BlogCard = ({ image, title, date, readTime, excerpt }) => (
-  <div className="flex flex-col lg:flex-row items-start gap-4 border-b-2 border-[#D6D6D6] pb-6 ">
+  <div className="flex flex-col lg:flex-row items-start gap-4 border-b-2 border-[#D6D6D6] pb-6 group ">
     <Image
       src={image}
       alt={title}
-      className="w-full max-w-full lg:max-w-[242px] 2xl:max-w-[375px] h-48 2xl:h-52 object-cover rounded-lg"
+      className="w-full max-w-full lg:max-w-[242px] 2xl:max-w-[375px] h-48 2xl:h-52 object-cover rounded-lg group-hover:shadow-2xl"
     />
     <div className="flex-1">
       <h2 className="text-[18px] leading-[26px] font-[Inter] font-semibold mb-3.5  ">
@@ -27,10 +27,10 @@ const BlogCard = ({ image, title, date, readTime, excerpt }) => (
         {excerpt}
       </p>
       <div className="flex gap-5 justify-between flex-wrap">
-        <Link href="/" className="bg-[#1B5795] text-white text-[14px] font-[Inter] font-medium px-4 py-2 rounded-[8px] hover:bg-blue-700 transition">
+        <Link href="/" className="bg-[#1B5795] text-white text-[14px] font-[Inter] font-medium px-4 py-2 rounded-[8px]  transition-all ease-in-out duration-500 hover:bg-[#FB971B] ">
           Read more
         </Link>
-        <ul className="flex gap-2 items-center">
+        <ul className="flex gap-2 items-center"> 
           <li>
             <Link href={"/"}>
               <svg width="54" height="20" viewBox="0 0 54 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -464,7 +464,7 @@ const BlogList = ({ searchTerm = '' }) => {
         {/* Right sidebar remains unchanged */}
         <div className=" sticky top-0 h-fit right_main_col flex flex-wrap md:flex-col gap-6 md:max-w-[242px]  2xl:max-w-[326px]  w-full">
           {/* Newsletter box */}
-          <div className="bg-[#CED7FF4D] px-[10px] py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:bg-amber-300">
+          <div className="bg-[#CED7FF4D] px-[10px] py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl hover:bg-[#FB971B] group">
             <div className="mx-auto rounded-full flex items-center justify-center">
               <span className="mb-2">
                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -473,7 +473,7 @@ const BlogList = ({ searchTerm = '' }) => {
                 </svg>
               </span>
             </div>
-            <h3 className="text-sm font-semibold mb-[15px]">
+            <h3 className="text-sm font-semibold mb-[15px] group-hover:text-white  transition-all ease-in-out duration-500">
               Sign up for our newsletter to find great value in your inbox
             </h3>
             <div className="flex items-center mt-3 relative">
@@ -482,45 +482,45 @@ const BlogList = ({ searchTerm = '' }) => {
                 placeholder="Enter your email"
                 className="bg-[#F4F4F4] flex p-[10px] pr-9 w-full text-[14px] text-[#606060] leading-[20px] border border-[#DEDEDE] rounded-[8px] focus:outline-none"
               />
-              <button className="absolute top-0 bottom-0 right-[3px]">
+              <Link  href={"/"} className="absolute top-0 bottom-0 right-[3px] h-full">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="34" height="34" rx="6" fill="#1B5795"/>
+                  <rect width="34" height="100%" rx="6" fill="#1B5795"/>
                   <path d="M10.3334 17H23.6667H10.3334ZM23.6667 17L18.6667 12L23.6667 17ZM23.6667 17L18.6667 22L23.6667 17Z" fill="white"/>
                   <path d="M10.3334 17H23.6667M23.6667 17L18.6667 12M23.6667 17L18.6667 22" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </button>
+              </Link >
             </div>
           </div>
 
           {/* Featured Post 1 */}
-          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:bg-amber-300">
+          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl hover:bg-[#FB971B] group">
             <div className="relative">
               <Image src={FeaturedPost} alt="Cyber Threats 2025" className="w-full h-auto mb-[11px]" />
-              <span className="absolute top-[5px] left-[6px] bg-[#FB971B] text-[12px] px-2 py-0.5 rounded font-normal text-white">
+              <span className="absolute top-[5px] left-[6px] bg-[#FB971B] text-[12px] px-2 py-0.5 rounded font-normal text-white ">
                 Featured post
               </span>
             </div>
             <div className="px-2 max-w-[215px] m-auto pb-[15px]">
-              <h4 className="text-[15px] text-[#1E1E1E] font-semibold mb-[11px] text-center">
+              <h4 className="text-[15px] text-[#1E1E1E] font-semibold mb-[11px] text-center group-hover:text-white  transition-all ease-in-out duration-500">
                 Key Cyber Threats to Watch in 2025
               </h4>
-              <Link href="/" className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-blue-700">
+              <Link href="/" className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-[#FB971B] transition-all ease-in-out duration-500">
                 Read more
               </Link>
             </div>
           </div>
 
           {/* Featured Post 2 */}
-          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full hover:bg-amber-300 transition-all ease-in-out duration-500">
+          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl transition-all ease-in-out duration-500 hover:bg-[#FB971B] group">
             <Image src={FeaturedPost} alt="Voice Phishing Alert" className="w-full h-auto mb-[11px]" />
             <div className="pb-[12px]">
-              <h4 className="text-[15px] text-[#1E1E1E] leading-[21px] font-semibold mb-2 text-center">
+              <h4 className="text-[15px] text-[#1E1E1E] leading-[21px] font-semibold mb-2 text-center group-hover:text-white  transition-all ease-in-out duration-500">
                 Voice Phishing Attacks: How to Prevent and Respond to Them
               </h4>
-              <p className="text-[12px] text-[#707070] leading-[20px] font-normal mb-3 text-center">
+              <p className="text-[12px] text-[#707070] leading-[20px] font-normal mb-3 text-center group-hover:text-white  transition-all ease-in-out duration-500">
                 Have you ever received a call from an unknown number and wondered who could be on the other end? It could be a vishing scam.
               </p>
-              <Link href="/" className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-blue-700">
+              <Link href="/" className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-[#FB971B] transition-all ease-in-out duration-500">
                 Read more
               </Link>
             </div>
