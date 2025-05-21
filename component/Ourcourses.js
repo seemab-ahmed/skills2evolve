@@ -7,27 +7,45 @@ import Icon1 from '../Images/icon1.png'
 import Icon2 from '../Images/icon2.png'
 import Link from "next/link";
 const Ourcourses = () => {
+  const featurecard = [
+            {
+              title: "Cloud Computing Foundations",
+              description:
+                "Build in-demand skills to work with cloud platforms like AWS and Google Cloud. Learn how to deploy, manage, and scale modern infrastructure—no prior experience needed.",
+            },
+            {
+              title: "Cybersecurity Essentials",
+              description:
+                "Discover how to protect digital systems, detect threats, and defend against attacks. Hands-on learning with real tools used by security professionals.",
+            },
+            {
+              title: "AI Fundamentals & Applications",
+              description:
+                "Explore the world of Artificial Intelligence—understand how it works, where it’s used, and how you can be part of shaping its future.",
+            },
+          ];
+
   return (
  <div className="px-5">
        <div className=" relative pb-[56px]  m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px]  bg-white">
-      <div className="absolute top-0 h-full left-[-5%] z-10">
+         <div className="absolute top-0 h-full left-[-5%] z-10">
       <Image
               src={Coursebg}
               alt="Student"
               className=" flex  w-full h-full"
             />
-      </div>
-      <div className="absolute top-0 bottom-0 m-auto h-fit right-0 z-10">
+          </div>
+          <div className="absolute top-0 bottom-0 m-auto h-fit right-0 z-10">
       <Image
               src={Courseright}
               alt="Student"
               className=" flex  w-full h-auto"
             />
-      </div>
+          </div>
       <div className="">
         {/* Left Image and Heading */}
         <div className="flex flex-col md:flex-row gap-5 lg:gap-0 mb-10 items-end">
-          <div className="relative md:max-w-[501px] w-full">
+          <div data-aos="zoom-in"  data-aos-duration="3000" className="relative md:max-w-[501px] w-full">
             <Image
               src={women}
               alt="Student"
@@ -66,24 +84,8 @@ const Ourcourses = () => {
 
         {/* Right Course Cards */}
         <div className="flex flex-wrap lg:flex-nowrap gap-6 relative z-20">
-          {[
-            {
-              title: "Cloud Computing Foundations",
-              description:
-                "Build in-demand skills to work with cloud platforms like AWS and Google Cloud. Learn how to deploy, manage, and scale modern infrastructure—no prior experience needed.",
-            },
-            {
-              title: "Cybersecurity Essentials",
-              description:
-                "Discover how to protect digital systems, detect threats, and defend against attacks. Hands-on learning with real tools used by security professionals.",
-            },
-            {
-              title: "AI Fundamentals & Applications",
-              description:
-                "Explore the world of Artificial Intelligence—understand how it works, where it’s used, and how you can be part of shaping its future.",
-            },
-          ].map((course, idx) => (
-            <div key={idx} className="group bg-white  shadow-lg  p-5 md:max-w-[331px] 2xl:max-w-[33%] flex flex-col gap-5 rounded-lg hover:bg-[#FB971B] hover:scale-105 transform  transition-all ease-in-out duration-500  hover:shadow-2xl">
+          {featurecard.map((course, idx) => (
+            <div key={idx} data-aos="zoom-in"  data-aos-duration="2000" className="group bg-white  shadow-lg  p-5 md:max-w-[331px] 2xl:max-w-[33%] flex flex-col gap-5 rounded-lg hover:bg-[#FB971B] hover:scale-105 transform  transition-all ease-in-out duration-500  hover:shadow-2xl">
               <div >   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 10H17V11H11V10Z" fill="#1B5795"/>
                 <path d="M18 10H19V11H18V10Z" fill="#1B5795"/>

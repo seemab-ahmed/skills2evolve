@@ -160,7 +160,7 @@ const Career = () => {
                   <span className="">
                         {activeIndex === index ? (
                             <svg
-                            className="w-6 h-6 transform rotate-180 transition-transform"
+                            className="w-6 h-6 transform rotate-180 transition-transform group-hover:text-[#fff]"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2"

@@ -5,11 +5,11 @@ import FeaturedPost from "../Images/featured-post.png";
 import Link from "next/link";
 
 const BlogCard = ({ image, title, date, readTime, excerpt }) => (
-  <div className="flex flex-col lg:flex-row items-start gap-4 border-b-2 border-[#D6D6D6] pb-6 group ">
+  <div className="flex flex-col lg:flex-row items-start gap-4 border-b-2 border-[#D6D6D6] pb-6 group hover:shadow-xl transition-all ease-in-out duration-400 ">
     <Image
       src={image}
       alt={title}
-      className="w-full max-w-full lg:max-w-[242px] 2xl:max-w-[375px] h-48 2xl:h-52 object-cover rounded-lg group-hover:shadow-2xl"
+      className="w-full max-w-full lg:max-w-[242px] 2xl:max-w-[375px] h-48 2xl:h-52 object-cover rounded-lg group-hover:shadow-xl"
     />
     <div className="flex-1">
       <h2 className="text-[18px] leading-[26px] font-[Inter] font-semibold mb-3.5  ">
@@ -422,9 +422,9 @@ const BlogList = ({ searchTerm = '' }) => {
                      
                         <button
                           onClick={() => setCurrentPage(currentPage - 1)}
-                          className="hover:text-[#FB971B] transition-all ease-in-out duration-500 md:w-[45px] w-[40px] md:h-[45px] h-[40px] rounded-[50%] flex items-center justify-center border disabled:opacity-50"
+                          className="hover:text-[#FB971B] group  hover:bg-[#1B5795] transition-all ease-in-out duration-500 md:w-[45px] w-[40px] md:h-[45px] h-[40px] rounded-[50%] flex items-center justify-center border disabled:opacity-50"
                         >
-                              <svg className="cursor-pointer w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                              <svg className="cursor-pointer w-6 h-6 text-gray-800 dark:text-white group-hover:text-[#fff] transition-all ease-in-out duration-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
                             </svg>
                         </button>
@@ -434,7 +434,7 @@ const BlogList = ({ searchTerm = '' }) => {
                         <button
                           key={pageNum}
                           onClick={() => setCurrentPage(pageNum)}
-                          className={`md:w-[45px] w-[40px] md:h-[45px] h-[40px] rounded-[50%] border cursor-pointer ${
+                          className={`md:w-[45px] w-[40px] md:h-[45px] h-[40px] rounded-[50%] border cursor-pointer hover:text-white hover:bg-[#1B5795] transition-all ease-in-out duration-500 ${
                             currentPage === pageNum ? "bg-[#1B5795] text-white" : ''
                           }`}
                           
@@ -446,9 +446,9 @@ const BlogList = ({ searchTerm = '' }) => {
                       
                         <button
                           onClick={() => setCurrentPage(currentPage + 1)}
-                          className="hover:text-[#FB971B] transition-all ease-in-out duration-500 md:w-[45px] w-[40px] md:h-[45px] h-[40px] rounded-[50%] flex items-center justify-center border disabled:opacity-50"
+                          className=" hover:bg-[#1B5795] group hover:text-[#FB971B] transition-all ease-in-out duration-500 md:w-[45px] w-[40px] md:h-[45px] h-[40px] rounded-[50%] flex items-center justify-center border disabled:opacity-50"
                         >
-                          <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                          <svg className="w-6 h-6 text-gray-800 dark:text-white group-hover:text-[#fff] transition-all ease-in-out duration-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
                             </svg>
                         </button>
@@ -464,7 +464,7 @@ const BlogList = ({ searchTerm = '' }) => {
         {/* Right sidebar remains unchanged */}
         <div className=" sticky top-0 h-fit right_main_col flex flex-wrap md:flex-col gap-6 md:max-w-[242px]  2xl:max-w-[326px]  w-full">
           {/* Newsletter box */}
-          <div className="bg-[#CED7FF4D] px-[10px] py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl hover:bg-[#FB971B] group">
+          <div data-aos="zoom-in" data-aos-duration="2000" className="bg-[#CED7FF4D] px-[10px] py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl">
             <div className="mx-auto rounded-full flex items-center justify-center">
               <span className="mb-2">
                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -473,7 +473,7 @@ const BlogList = ({ searchTerm = '' }) => {
                 </svg>
               </span>
             </div>
-            <h3 className="text-sm font-semibold mb-[15px] group-hover:text-white  transition-all ease-in-out duration-500">
+            <h3 className="text-sm font-semibold mb-[15px]">
               Sign up for our newsletter to find great value in your inbox
             </h3>
             <div className="flex items-center mt-3 relative">
@@ -493,7 +493,7 @@ const BlogList = ({ searchTerm = '' }) => {
           </div>
 
           {/* Featured Post 1 */}
-          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl hover:bg-[#FB971B] group">
+          <div data-aos="zoom-in" data-aos-duration="2000"  className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl ">
             <div className="relative">
               <Image src={FeaturedPost} alt="Cyber Threats 2025" className="w-full h-auto mb-[11px]" />
               <span className="absolute top-[5px] left-[6px] bg-[#FB971B] text-[12px] px-2 py-0.5 rounded font-normal text-white ">
@@ -511,13 +511,13 @@ const BlogList = ({ searchTerm = '' }) => {
           </div>
 
           {/* Featured Post 2 */}
-          <div className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl transition-all ease-in-out duration-500 hover:bg-[#FB971B] group">
+          <div data-aos="zoom-in" data-aos-duration="2000" className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl ">
             <Image src={FeaturedPost} alt="Voice Phishing Alert" className="w-full h-auto mb-[11px]" />
             <div className="pb-[12px]">
-              <h4 className="text-[15px] text-[#1E1E1E] leading-[21px] font-semibold mb-2 text-center group-hover:text-white  transition-all ease-in-out duration-500">
+              <h4 className="text-[15px] text-[#1E1E1E] leading-[21px] font-semibold mb-2 text-center">
                 Voice Phishing Attacks: How to Prevent and Respond to Them
               </h4>
-              <p className="text-[12px] text-[#707070] leading-[20px] font-normal mb-3 text-center group-hover:text-white  transition-all ease-in-out duration-500">
+              <p className="text-[12px] text-[#707070] leading-[20px] font-normal mb-3 text-center ">
                 Have you ever received a call from an unknown number and wondered who could be on the other end? It could be a vishing scam.
               </p>
               <Link href="/" className="w-fit m-auto flex bg-[#1B5795] text-white text-[14px] px-4 py-2 rounded hover:bg-[#FB971B] transition-all ease-in-out duration-500">
@@ -527,13 +527,13 @@ const BlogList = ({ searchTerm = '' }) => {
           </div>
 
           {/* Categories */}
-          <div className="w-full sm:w-[48%] h-fit md:w-full">
+          <div  className="w-full sm:w-[48%] h-fit md:w-full">
             <h3 className="text-[18px] text-[#1E1E1E] leading-[26px] font-semibold mb-[10px]">More categories</h3>
             <div className="flex flex-wrap gap-[10px]">
               {categories.map((cat, i) => (
                 <span
                   key={i}
-                  className="bg-[#F2F2F2] text-[12px] text-[#1E1E1E] leading-[18px] font-normal px-[10px] py-[6px] rounded-[4px]"
+                  className="bg-[#F2F2F2] transition-all ease-in-out duration-500 hover:bg-[#FB971B] hover:text-[#fff]  text-[12px] text-[#1E1E1E] leading-[18px] font-normal px-[10px] py-[6px] rounded-[4px]"
                 >
                   {cat}
                 </span>

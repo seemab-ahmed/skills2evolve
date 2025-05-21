@@ -10,7 +10,7 @@ const career = () => {
   return (
     <div className="px-5">
     <div className="bg-[#242F3B] text-white md:pt-[90px] md:pb-[73px] py-[50px] relative sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px] m-auto rounded-2xl">
-      <div className="absolute md:top-[55px] top-[20px] md:right-[59px] right-[30px]">
+      <div data-aos="fade-left"  data-aos-duration="2000" className="absolute md:top-[55px] top-[20px] md:right-[59px] right-[30px]">
           <div className=" w-[77px] h-[77px] flex "> 
               <Image
                 src={Icon1}
@@ -40,7 +40,7 @@ const career = () => {
                  className=" w-full h-full"
               />     
       </div>
-      <div className="absolute bottom-[115px] left-[50%] md:left-[363px] max-w-[105px] w-full">
+      <div  data-aos="fade-up"  data-aos-duration="2000" className=" absolute bottom-[115px] left-[50%] md:left-[363px] max-w-[105px] w-full">
          <Image
                 src={Carrerenter}
                 alt="Icon"
@@ -81,25 +81,25 @@ const career = () => {
            </div>
            <div className="flex flex-col gap-[10px]  w-full">
 
-              <div className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
+              <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
                 <h4 className="text-[20px] leading-[36px] pb-[8px] border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white"> Transform </h4>
                 <p className="text-[16px] leading-[24px] font-normal group-hover:text-white"> Build foundational skills and growth mindset </p>
               </div>
 
              
-                <div className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
+                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
                   <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Transition</h4>
-                  <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  !text-[#707070] ">Apply your skills in real-world contexts</p>
+                  <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  text-[#707070] ">Apply your skills in real-world contexts</p>
                 </div>           
 
-                <div className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
+                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
                   <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Change</h4>
-                  <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  !text-[#707070] ">Deepen your expertise and specialize</p>
+                  <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  text-[#707070] ">Deepen your expertise and specialize</p>
                 </div>
           
-                <div className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
+                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
                   <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Career Support</h4>
-                  <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  !text-[#707070] ">Get mentorship, resume help, and job guidance</p>
+                  <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  text-[#707070] ">Get mentorship, resume help, and job guidance</p>
                 </div>
           
            </div>

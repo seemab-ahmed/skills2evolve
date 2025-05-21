@@ -46,7 +46,7 @@ const Testimonials = () => {
           </h2>
         </div>
         <div className="relative ">
-          <div className=" sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1500x] m-auto ">
+          <div className="relative  sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1500x] m-auto ">
             <Splide
               options={{
                 type: 'loop',
@@ -64,17 +64,17 @@ const Testimonials = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <SplideSlide key={index}  >
-                  <div className="bg-white rounded-xl shadow-lg p-6 h-full mr-5 ml-3 hover:bg-[#FB971B] hover:shadow-2xl transition-all ease-in-out duration-500 group">
+                  <div data-aos="zoom-in"  data-aos-duration="2000" className="cursor-pointer hover:scale-105 transform  bg-white rounded-xl shadow-lg p-6 h-full mr-5 ml-3 hover:bg-[#FB971B] hover:shadow-xl transition-all ease-in-out duration-500 group">
                     <div className="flex gap-[10px] items-center border-b border-[#E3E3E3] pb-6 mb-6">
                       <div className="flex max-w-[48px] w-full h-auto">
                         <Image src={Cardimage} alt="Logo" className="w-full h-auto" />
                       </div>
                       <div className="flex items-start flex-col">
-                        <h3 className="font-semibold text-[20px] leading-[36px] text-[#1E1E1E] group-hover:text-white">{testimonial.name}</h3>
-                        <p className="text-left text-[16px] leading-7 font-normal text-[#707070] group-hover:text-white">{testimonial.title}</p>
+                        <h3 className="font-semibold text-[20px] leading-[36px] text-[#1E1E1E] group-hover:text-white transition-all ease-in-out duration-500">{testimonial.name}</h3>
+                        <p className="text-left text-[16px] leading-7 font-normal text-[#707070] group-hover:text-white transition-all ease-in-out duration-500">{testimonial.title}</p>
                       </div>
                     </div>
-                    <p className="text-left text-[16px] leading-7 font-normal text-[#707070] group-hover:text-white">{testimonial.quote}</p>
+                    <p className="text-left text-[16px] leading-7 font-normal text-[#707070] group-hover:text-white transition-all ease-in-out duration-500">{testimonial.quote}</p>
                   </div>
                 </SplideSlide>
               ))}
@@ -83,7 +83,7 @@ const Testimonials = () => {
             
           </div>
           {/* Custom Buttons */}
-          <div className="flex justify-between absolute top-0 bottom-0 h-fit w-full px-2 m-auto">
+          <div className="flex justify-between absolute top-0 bottom-0 h-fit w-full px-2 m-auto z-10">
                 <button
                   className="w-8 h-8 flex items-center justify-center border border-[#1717441A] cursor-pointer text-[#1B5795] hover:text-[#fff] transition-all duration-500 ease-in-out shadow-md rounded-full hover:bg-[#FB971B]"
                   onClick={() => splideRef.current?.splide?.go('<')}

@@ -48,7 +48,7 @@ const Header = () => {
                 <li key={item.name} className='text-center m-0'>
                   <Link 
                     href={item.path}
-                    className={` px-4 w-ful lg:w-fit text-center text-[14px] leading-5 font-[Inter] font-medium text-[#fff]  lg:text-[#1E1E1E] pb-[24px] border-b-2 border-transparent transition-all ease-in-out duration-300 hover:border-[#1B5795] `}
+                    className={` px-4 w-ful lg:w-fit text-center text-[14px] leading-5 font-[Inter] font-medium text-[#fff]  lg:text-[#1E1E1E] pb-[24px] border-b-3 border-transparent transition-all ease-in-out duration-300 hover:border-[#FB971B] `}
                   >
                     {item.name}
                   </Link>
@@ -75,11 +75,28 @@ const Header = () => {
       <div className='flex gap-5 items-center'>
 
         {/* Hamburger */}
-        <div className="flex items-end flex-col lg:hidden cursor-pointer" onClick={toggleMenu}>
-        <div className="w-7 h-1 bg-black mb-1"></div>
-        <div className="w-9 h-1 bg-black mb-1"></div>
-        <div className="w-7 h-1 bg-black"></div>
-        </div>
+    {/* Hamburger */}
+      <div className="relative w-9 h-6 flex flex-col justify-between items-end lg:hidden cursor-pointer" onClick={toggleMenu}>
+        <span
+          className={`
+            absolute w-7 h-1 bg-black transition-all duration-300 ease-in-out
+            ${menuOpen ? 'rotate-45 top-2.5' : 'top-0'}
+          `}
+        ></span>
+        <span
+          className={`
+            absolute w-9 h-1  bg-black transition-all duration-300 ease-in-out
+            ${menuOpen ? 'opacity-0' : 'top-2.5'}
+          `}
+        ></span>
+        <span
+          className={`
+            absolute w-7 h-1  bg-black transition-all duration-300 ease-in-out
+            ${menuOpen ? '-rotate-45 top-2.5' : 'bottom-0'}
+          `}
+        ></span>
+      </div>
+
 
         <div className=" hidden lg:flex  items-center gap-4">
           <Link 

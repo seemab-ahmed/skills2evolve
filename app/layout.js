@@ -4,6 +4,7 @@ import Header from "@/component/Header";
 import Footer from "@/component/footer";
 import Future from "@/component/build-future";
 import { Inter } from "next/font/google";
+import AOSWrapper from "@/component/AOSWrapper"; 
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,15 +18,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-arp="">
-      <body
-        className={`${inter.variable} antialiased`}
-        cz-shortcut-listen="true"
-      >
-        <Header />
-        {children}
-        <Future />
-        <Footer />
+    <html lang="en">
+      <body className={`${inter.variable} antialiased`} cz-shortcut-listen="true">
+        <AOSWrapper>
+          <Header />
+          {children}
+          <Future />
+          <Footer />
+        </AOSWrapper>
       </body>
     </html>
   );
