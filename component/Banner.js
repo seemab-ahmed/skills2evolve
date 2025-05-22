@@ -1,10 +1,7 @@
 
 const Banner = () => {
     return (
-      <div 
-      data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500" className="mt-[100px] ">
+      <div  data-aos="fade-down" data-aos-duration="1500" className="mt-[100px]">
         <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px]   m-auto">
           <div className=" relative bg-gray-900  px-[20px] pt-5 pb-[24px] md:px-[50px] overflow-hidden rounded-[4px]">
             <div className="relative z-10 ">

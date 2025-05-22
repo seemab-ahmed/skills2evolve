@@ -85,7 +85,7 @@ const Ourcourses = () => {
         {/* Right Course Cards */}
         <div className="flex flex-wrap lg:flex-nowrap gap-6 relative z-20">
           {featurecard.map((course, idx) => (
-            <div key={idx} data-aos="zoom-in"  data-aos-duration="2000" className="group bg-white  shadow-lg  p-5 md:max-w-[331px] 2xl:max-w-[33%] flex flex-col gap-5 rounded-lg hover:bg-[#FB971B] hover:scale-105 transform  transition-all ease-in-out duration-500  hover:shadow-2xl">
+            <div key={idx} data-aos="zoom-in"  data-aos-duration="2000" className="group bg-white  shadow-lg  p-5 md:max-w-[331px] 2xl:max-w-[33%] flex flex-col gap-5 rounded-lg hover:bg-[#FB971B] hover:scale-105 transform  transition-all ease-in-out duration-700  hover:shadow-2xl">
               <div >   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 10H17V11H11V10Z" fill="#1B5795"/>
                 <path d="M18 10H19V11H18V10Z" fill="#1B5795"/>

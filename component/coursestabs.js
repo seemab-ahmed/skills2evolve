@@ -120,7 +120,7 @@ export default function Courcestabs() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredData.map((item, index) => (
-          <div key={index} className="bg-white rounded-lg border border-[#E3E3E3] ">
+          <div key={index} data-aos="zoom-in"  data-aos-duration="2000" className="bg-white rounded-lg border border-[#E3E3E3] hover:shadow-xl  transition-all ease-in-out duration-500">
           <div>
           <Image
                 src={Cardimage}
@@ -141,7 +141,7 @@ export default function Courcestabs() {
                 <p className=" mb-5 text-[14px] font-normal leading-[20px] text-[#707070] line-clamp-3">
                  {item.description}
                 </p>
-                <Link href={"/"} className=" flex items-center justify-center text-[14px] leading-[20px] text-[#1E1E1E] bg-[#F7F7F7] w-full border border-[#D6D6D6] rounded py-[12px] px-5 font-medium hover:bg-gray-100">
+                <Link href={"/"} className=" flex items-center justify-center text-[14px] leading-[20px] text-[#1E1E1E] hover:text-white bg-[#F7F7F7] w-full border border-[#D6D6D6] rounded py-[12px] px-5 font-medium hover:bg-[#FB971B] transition-all ease-in-out duration-500">
                   View Details
                 </Link>
           </div>
@@ -150,7 +150,7 @@ export default function Courcestabs() {
       </div>
 
       <div className="flex justify-center mt-8">
-        <Link  href={"/"} className="text-[14px] leading-[20px] text-[#1E1E1E] px-4 py-2 border border-[#CED7FF] rounded font-medium  hover:bg-gray-100">
+        <Link  href={"/"} className="text-[14px] leading-[20px] text-[#1E1E1E] px-4 py-2 border border-[#CED7FF] rounded font-medium  hover:text-white hover:bg-[#FB971B] transition-all ease-in-out duration-500">
            Load More
         </Link>
       </div>

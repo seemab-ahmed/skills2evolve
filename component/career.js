@@ -67,7 +67,7 @@ const career = () => {
               Foundational training, skill specialization, and job-ready support, all in one flexible learning path.
             </p>
           </div>
-          <Link href="/" className=" px-4 py-2  bg-[#FB971B] rounded-lg text-[14px] leading-[20px] font-medium hover:bg-[#1B5795]  transition-all ease-in-out duration-500">Find Your Path</Link>
+          <Link href="/" className=" px-4 py-2  bg-[#FB971B] rounded-lg text-[14px] leading-[20px] font-medium hover:bg-[#1B5795]  transition-all ease-in-out duration-700">Find Your Path</Link>
         </div>
 
         {/* Right Pathway Boxes */}
@@ -81,24 +81,24 @@ const career = () => {
            </div>
            <div className="flex flex-col gap-[10px]  w-full">
 
-              <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
+              <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-700 group">
                 <h4 className="text-[20px] leading-[36px] pb-[8px] border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white"> Transform </h4>
                 <p className="text-[16px] leading-[24px] font-normal group-hover:text-white"> Build foundational skills and growth mindset </p>
               </div>
 
              
-                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
-                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Transition</h4>
+                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-700 group">
+                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-700  ">Transition</h4>
                   <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  text-[#707070] ">Apply your skills in real-world contexts</p>
                 </div>           
 
-                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
-                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Change</h4>
+                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-700 group">
+                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-700  ">Change</h4>
                   <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  text-[#707070] ">Deepen your expertise and specialize</p>
                 </div>
           
-                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-500 group">
-                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-500  ">Career Support</h4>
+                <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-700 group">
+                  <h4 className="text-[20px] leading-[36px] pb-[8px]   border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white  text-[#1E1E1E] transition-all ease-in-out duration-700  ">Career Support</h4>
                   <p className="text-[16px] leading-[24px] font-normal  group-hover:text-white  text-[#707070] ">Get mentorship, resume help, and job guidance</p>
                 </div>
           
