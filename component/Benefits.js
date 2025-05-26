@@ -143,7 +143,7 @@ const Career = () => {
           </div>
 
           {/* Right Side Accordion */}
-          <div className="lg:max-w-[703px] 2xl:max-w-[960px] flex flex-col gap-5 w-full">
+          <div className="lg:max-w-[703px] 2xl:max-w-[960px] flex flex-col gap-6 w-full">
             {accordionData.map((item, index) => (
               <div
                 key={index}

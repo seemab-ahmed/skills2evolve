@@ -79,7 +79,7 @@ const career = () => {
                 <div className="relative z-[2px]  w-6 h-6 bg-orange-400 border-dotted border-[#FB971B] rounded-full text-base text-center  justify-center flex items-center ">3</div>
                 <div className="relative z-[2px]  w-6 h-6 bg-orange-400 border-dotted border-[#FB971B]  rounded-full text-base text-center justify-center  flex items-center ">4</div>
            </div>
-           <div className="flex flex-col gap-[10px]  w-full">
+           <div className="flex flex-col gap-6  w-full">
 
               <div data-aos="fade-up"  data-aos-duration="2000" className="bg-white text-gray-800 px-5 pt-1 pb-3 rounded-lg hover:bg-[#FB971B] transition-all ease-in-out duration-700 group">
                 <h4 className="text-[20px] leading-[36px] pb-[8px] border-b mb-[6px] border-[#D1D1D1] font-semibold group-hover:text-white"> Transform </h4>

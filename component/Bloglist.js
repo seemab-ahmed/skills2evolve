@@ -24,7 +24,7 @@ const BlogCard = ({ image, title, date, readTime, excerpt }) => (
           ⏱ {readTime} min read
         </span>
       </div>
-      <p className="text-[#707070] text-[14px] font-[Inter] font-normal mb-3 line-clamp-2 ">
+      <p className="text-[#707070] text-[16px] font-[Inter] font-normal mb-3 line-clamp-2 ">
         {excerpt}
       </p>
       <div className="flex gap-5 justify-between flex-wrap">
@@ -390,7 +390,7 @@ const BlogList = ({ searchTerm = '' }) => {
    <div className="px-5">
       <div className="sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px] m-auto">
       <div className=" relative flex flex-col md:flex-row gap-10 border-t-2 border-[#D6D6D6] pt-[30px] md:pb-[100px] pb-[50px]">
-        <div className="md:max-w-[774px] xl:max-w-[1050px] w-full flex flex-col gap-9">
+        <div className="md:max-w-[774px] xl:max-w-[1050px] w-full flex flex-col gap-6">
           {currentPosts.length > 0 ? (
             currentPosts.map((post, index) => (
               <BlogCard key={index} {...post} />
@@ -457,7 +457,7 @@ const BlogList = ({ searchTerm = '' }) => {
         </div>
 
         {/* Right sidebar remains unchanged */}
-        <div className=" sticky top-0 h-fit right_main_col flex flex-wrap md:flex-col gap-[13] md:max-w-[210px] lg:max-w-[300px]  2xl:max-w-[326px]  w-full">
+        <div className=" sticky top-0 h-fit right_main_col flex flex-wrap md:flex-col gap-6 md:max-w-[210px] lg:max-w-[300px]  2xl:max-w-[326px]  w-full">
           {/* Newsletter box */}
           <div data-aos="zoom-in" data-aos-duration="2000" className="bg-[#CED7FF4D] px-4 py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl">
             <div className="mx-auto rounded-full flex items-center justify-center">
@@ -468,7 +468,7 @@ const BlogList = ({ searchTerm = '' }) => {
                 </svg>
               </span>
             </div>
-            <h3 className="text-sm font-semibold mb-[15px] px-4 ">
+            <h3 className="text-sm font-semibold mb-[15px]  ">
               Sign up for our newsletter to find great value in your inbox
             </h3>
             <div className="flex items-center mt-3 relative">
@@ -495,7 +495,7 @@ const BlogList = ({ searchTerm = '' }) => {
                 Featured post
               </span>
             </div>
-            <div className="max-w-[215px] m-auto pb-[15px]">
+            <div className=" m-auto pb-[15px]">
               <h4 className=" px-4 text-[15px] text-[#1E1E1E] font-semibold mb-[11px] text-center group-hover:text-white  transition-all ease-in-out duration-500">
                 Key Cyber Threats to Watch in 2025
               </h4>
@@ -522,7 +522,7 @@ const BlogList = ({ searchTerm = '' }) => {
           </div>
 
           {/* Categories */}
-          <div  className="w-full sm:w-[48%] h-fit md:w-full ">
+          <div  className="w-full sm:w-[48%] h-fit md:w-full px-4">
             <h3 className="text-[18px] text-[#1E1E1E] leading-[26px] font-semibold mb-[10px]">More categories</h3>
             <div className="flex flex-wrap gap-[10px]">
               {categories.map((cat, i) => (
