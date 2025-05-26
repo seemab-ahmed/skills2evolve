@@ -15,7 +15,9 @@ const BlogPage = () => {
   return (
     <>
     <Banner />
-    <BlogSearch onSearch={handleSearch} />
+    <BlogSearch 
+     description="Stay updated with expert articles, industry news, and research-driven blog posts tailored for you"
+     onSearch={handleSearch} />
     <BlogList searchTerm={searchTerm} />
     </>
   );
