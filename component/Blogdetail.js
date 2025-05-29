@@ -245,6 +245,62 @@ To make the most of these opportunities, it’s essential to approach scholarshi
     </div>
 </div>
 </div>
+
+{/* form  */}
+<div>
+    <h2 className="text-[#1E1E1E] text-[18px] font-semibold mb-6">Responses</h2>
+      <div className="md:p-[30px] p-[15px]  border border-[#D6D6D6] rounded-xl bg-white shadow">
+      
+      <p className="text-[#707070] text-[16px] font-normal mb-6">
+        Your email address will not be published. Required fields are marked *
+      </p>
+
+      <textarea
+        placeholder="Write a response..."
+        className="text-[#707070] text-[16px] font-normal w-full h-[147px] p-3 border border-[#D6D6D6] rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#1B5795] mb-6"
+      />
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+        <div>
+            <label className='flex mb-[10px] text-[16px] font-normal text-[#1E1E1E]'>Name</label>
+          <input
+            type="text"
+          placeholder=""
+          className="text-[#707070] text-[16px] font-normal w-full p-3 border border-[#D6D6D6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1B5795]"
+         />
+        </div>
+        <div>
+            <label className='flex mb-[10px] text-[16px] font-normal text-[#1E1E1E]'>Email</label>
+              <input
+          type="email"
+          placeholder=""
+          className="text-[#707070] text-[16px] font-normal w-full p-3 border border-[#D6D6D6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1B5795]"
+        />
+        </div>
+        <div>
+          <label className='flex mb-[10px] text-[16px] font-normal text-[#1E1E1E]'>Website</label>
+          <input
+          type="url"
+          placeholder=""
+          className="text-[#707070] text-[16px] font-normal w-full p-3 border border-[#D6D6D6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1B5795]"
+          />
+        </div>
+      </div>
+
+      <div className="flex items-center space-x-2 mb-6">
+        <input type="checkbox" id="save-info" className="w-4 h-4" />
+        <label htmlFor="save-info" className="text-sm text-gray-600">
+          Save my name, email, and website in this browser for the next time I comment.
+        </label>
+      </div>
+
+      <button className="bg-[#1B5795] hover:bg-[#FB971B] text-white text-4 px-[39px] py-[10px] rounded-md font-medium ml-auto flex">
+        Publish
+      </button>
+    </div>
+</div>
+
+
 </div>
 
 {/* Sidebar */}
@@ -257,7 +313,7 @@ To make the most of these opportunities, it’s essential to approach scholarshi
             <input
                 type="text"
                 placeholder="Search"
-                className="w-full pl-8 pr-2 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1B5795]"
+                className="w-full pl-8 pr-2 py-2 border border-[#D6D6D6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1B5795]"
             />
             <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
                 <svg
