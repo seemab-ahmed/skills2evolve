@@ -5,30 +5,30 @@ import Logo from "../Images/logo.png";
 const Footer = () => {
     const footerLinks = [
         {
-          title: "Product",
+          title: "Legal",
           links: [
-            { text: "Gorem ipsum", href: "/" },
-            { text: "Forem", href: "/" },
-            { text: "Torem", href: "/" },
-            { text: "Sorem", href: "/" }
-          ]
-        },
-        {
-          title: "S2E",
-          links: [
-            { text: "Gorem ipsum", href: "/" },
-            { text: "Forem", href: "/" },
-            { text: "Torem", href: "/" },
-            { text: "Sorem", href: "/" }
+            { text: "Terms & Conditions", href: "/" },
+            { text: "Privacy Policy", href: "/" },
+            { text: "Legal", href: "/" },
+            { text: "Trust Center", href: "/" }
           ]
         },
         {
           title: "Contact Us",
           links: [
-            { text: "Gorem ipsum", href: "/" },
-            { text: "Forem", href: "/" },
-            { text: "Torem", href: "/" },
-            { text: "Sorem", href: "/" }
+            { text: "Help & Support", href: "/" },
+            { text: "Partner with Us", href: "/" },
+            { text: "FAQs", href: "/" },
+            { text: "Contact Form", href: "/" }
+          ]
+        },
+        {
+          title: "Company",
+          links: [
+            { text: "About Us", href: "/" },
+            { text: "Our Mission", href: "/" },
+            { text: "Blog", href: "/" },
+            { text: "Careers", href: "/" }
           ]
         }
       ];

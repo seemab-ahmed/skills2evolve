@@ -42,7 +42,8 @@ return (
         <span>0</span>
     </div>
 </div>
-<div className='flex' data-aos="zoom-in" data-aos-duration="2000">
+{/* data-aos="zoom-in" data-aos-duration="2000" */}
+<div className='flex' >
     <Image
 src={DetailImage}
 alt="Tech Image"
@@ -306,7 +307,7 @@ To make the most of these opportunities, it’s essential to approach scholarshi
 {/* Sidebar */}
 <div className="md:max-w-[242px]  w-full flex md:flex-col gap-6 md:flex-nowrap flex-wrap sticky top-0 h-fit">
 {/* Search Box */}
-<div data-aos="zoom-in" data-aos-duration="2000" className="bg-white p-3 rounded-lg shadow-sm hover:shadow-2xl transition-all ease-in-out duration-500 w-full">
+<div  className="bg-white p-3 rounded-lg shadow-sm hover:shadow-2xl transition-all ease-in-out duration-500 w-full">
 <h3 className="font-semibold text-[#1E1E1E] text-[18px] mb-5">Search</h3>
 <div className="flex justify-between gap-1">
     <div className="relative w-full md:max-w-xs">
@@ -332,7 +333,7 @@ To make the most of these opportunities, it’s essential to approach scholarshi
 </div>
 </div>
 {/* Recent Posts */}
-<div data-aos="zoom-in" data-aos-duration="2000" className='bg-white shadow-sm p-3 rounded-lg hover:shadow-2xl transition-all ease-in-out duration-500 w-full'>
+<div  className='bg-white shadow-sm p-3 rounded-lg hover:shadow-2xl transition-all ease-in-out duration-500 w-full'>
     <h3 className="font-semibold text-[#1E1E1E] text-[18px] mb-5">Recent Posts</h3>
     <ul className="flex flex-col gap-3 text-sm text-[#1E1E1E] text-[14px] font-normal">
     <li>Scholarships in Technology: Maximizing Your Educational Investment</li>
@@ -343,7 +344,7 @@ To make the most of these opportunities, it’s essential to approach scholarshi
     </ul>
 </div>
 {/* Categories */}
-<div data-aos="zoom-in" data-aos-duration="2000" className='bg-white shadow-sm p-3 rounded-lg hover:shadow-2xl transition-all ease-in-out duration-500 w-full'>
+<div  className='bg-white shadow-sm p-3 rounded-lg hover:shadow-2xl transition-all ease-in-out duration-500 w-full'>
     <h3 className="font-semibold text-[#1E1E1E] text-[18px] mb-5">Categories</h3>
     <ul className="flex flex-col gap-3 text-[#1E1E1E] text-[14px] font-normal">
     <li><a className='transition-all ease-in-out duration-300 hover:text-[#1B5795]' href="#" >Academic experience</a></li>
@@ -356,7 +357,7 @@ To make the most of these opportunities, it’s essential to approach scholarshi
     </ul>
 </div>
 </div>
-
+{/* data-aos="zoom-in" data-aos-duration="2000" */}
 </div>
 </div>
 );

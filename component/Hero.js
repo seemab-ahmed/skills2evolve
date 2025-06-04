@@ -45,10 +45,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
+            {/* data-aos="fade-left"
+              data-aos-duration="1000" */}
         {/* Image/Icons Section */}
-        <div  data-aos="fade-left"
-              data-aos-duration="1000" className="w-full max-w-[680px] lg:ml-[-139px] ">
+        <div   className="w-full max-w-[680px] lg:ml-[-139px] ">
            <Image src={bannerimage} alt="Logo" className="w-full h-auto " />
         </div>
       </div>

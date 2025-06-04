@@ -11,7 +11,7 @@ const Header = () => {
   
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Practice', path: '/' },
+    { name: 'Practice', path: '' },
     { name: 'About', path: '/all-courses' },
     { name: 'Blogs', path: '/blog' }
   ];
@@ -43,17 +43,24 @@ const Header = () => {
               lg:translate-x-0 lg:opacity-100 lg:visible
             `}>
 
-            <ul className=" gap-4 flex space-x-8 flex-col   lg:flex-row">
-              {navItems.map((item) => (
-                <li key={item.name} className='text-center m-0'>
-                  <Link 
-                    href={item.path}
-                    className={` px-4 w-ful lg:w-fit text-center text-[14px] leading-5 font-[Inter] font-medium text-[#fff]  lg:text-[#1E1E1E] pb-[24px] border-b-3 border-transparent transition-all ease-in-out duration-300 hover:border-[#FB971B] `}
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
+             <ul className="gap-4 flex space-x-8 flex-col lg:flex-row">
+              {navItems.map((item) => {
+                const isActive = pathname === item.path;
+                return (
+                  <li key={item.name} className="text-center m-0">
+                    <Link
+                      href={item.path}
+                      className={`px-4 w-full lg:w-fit text-center text-[14px] leading-5 font-[Inter] font-medium pb-[24px] border-b-3 transition-all duration-300 ${
+                        isActive
+                          ? 'border-[#FB971B] text-[#FB971B]'
+                          : 'border-transparent text-[#fff] lg:text-[#1E1E1E] hover:border-[#FB971B]'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
             <div className="flex flex-col lg:hidden items-center gap-4">
               <Link 

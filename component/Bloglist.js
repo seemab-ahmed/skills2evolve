@@ -459,7 +459,7 @@ const BlogList = ({ searchTerm = '' }) => {
         {/* Right sidebar remains unchanged */}
         <div className=" sticky top-0 h-fit right_main_col flex flex-wrap md:flex-col gap-6 md:max-w-[210px] lg:max-w-[300px]  2xl:max-w-[326px]  w-full">
           {/* Newsletter box */}
-          <div data-aos="zoom-in" data-aos-duration="2000" className="bg-[#CED7FF4D] px-4 py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl">
+          <div  className="bg-[#CED7FF4D] px-4 py-[14px] rounded-[8px] border-[#E3E3E3] border-[1px] text-center w-full sm:w-[48%] h-fit md:w-full transition-all ease-in-out duration-500 hover:shadow-xl">
             <div className="mx-auto rounded-full flex items-center justify-center">
               <span className="mb-2">
                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -488,7 +488,7 @@ const BlogList = ({ searchTerm = '' }) => {
           </div>
 
           {/* Featured Post 1 */}
-          <div data-aos="zoom-in" data-aos-duration="2000"  className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl ">
+          <div   className="bg-[#F0F3FF] rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl ">
             <div className="relative">
               <Image src={FeaturedPost} alt="Cyber Threats 2025" className="w-full h-auto mb-[11px]" />
               <span className="px-3 absolute top-[10px] left-[12px] bg-[#FB971B] text-[12px]  py-0.5 rounded font-normal text-white ">
@@ -506,7 +506,7 @@ const BlogList = ({ searchTerm = '' }) => {
           </div>
 
           {/* Featured Post 2 */}
-          <div data-aos="zoom-in" data-aos-duration="2000" className="bg-[#F0F3FF]  rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl ">
+          <div  className="bg-[#F0F3FF]  rounded-xl shadow-sm overflow-hidden p-1 w-full sm:w-[48%] h-fit md:w-full hover:shadow-xl ">
             <Image src={FeaturedPost} alt="Voice Phishing Alert" className="w-full h-auto mb-[11px]" />
             <div className="pb-[12px]">
               <h4 className="px-4 text-[15px] text-[#1E1E1E] leading-[21px] font-semibold mb-2 text-center ">
@@ -541,5 +541,5 @@ const BlogList = ({ searchTerm = '' }) => {
    </div>
   );
 };
-
+// data-aos="zoom-in" data-aos-duration="2000"
 export default BlogList;

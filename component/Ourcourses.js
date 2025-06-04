@@ -44,8 +44,9 @@ const Ourcourses = () => {
           </div>
       <div className="">
         {/* Left Image and Heading */}
+        {/* data-aos="zoom-in"  data-aos-duration="3000" */}
         <div className="flex flex-col md:flex-row gap-5 lg:gap-0 mb-10 items-end">
-          <div data-aos="zoom-in"  data-aos-duration="3000" className="relative md:max-w-[501px] w-full">
+          <div  className="relative md:max-w-[501px] w-full">
             <Image
               src={women}
               alt="Student"
@@ -83,9 +84,10 @@ const Ourcourses = () => {
         </div>
 
         {/* Right Course Cards */}
+        {/* data-aos="zoom-in"  data-aos-duration="2000" */}
         <div className="flex flex-wrap lg:flex-nowrap gap-6 relative z-20">
           {featurecard.map((course, idx) => (
-            <div key={idx} data-aos="zoom-in"  data-aos-duration="2000" className="group bg-white  shadow-lg  p-5 md:max-w-[331px] 2xl:max-w-[33%] flex flex-col gap-5 rounded-lg hover:bg-[#FB971B] hover:scale-105 transform  transition-all ease-in-out duration-700  hover:shadow-2xl">
+            <div key={idx}  className="group bg-white  shadow-lg  p-5 md:max-w-[331px] 2xl:max-w-[33%] flex flex-col gap-5 rounded-lg hover:bg-[#FB971B] hover:scale-105 transform  transition-all ease-in-out duration-700  hover:shadow-2xl">
               <div >   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 10H17V11H11V10Z" fill="#1B5795"/>
                 <path d="M18 10H19V11H18V10Z" fill="#1B5795"/>

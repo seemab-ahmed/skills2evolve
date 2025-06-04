@@ -117,10 +117,10 @@ export default function Courcestabs() {
           </button>
         ))}
       </div>
-
+{/* data-aos="zoom-in"  data-aos-duration="2000" */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredData.map((item, index) => (
-          <div key={index} data-aos="zoom-in"  data-aos-duration="2000" className="bg-white rounded-lg border border-[#E3E3E3] hover:shadow-xl  transition-all ease-in-out duration-500">
+          <div key={index}  className="bg-white rounded-lg border border-[#E3E3E3] hover:shadow-xl  transition-all ease-in-out duration-500">
           <div>
           <Image
                 src={Cardimage}
