@@ -13,14 +13,14 @@ const Hero = () => {
             PLATFORM: EDUCATION ONLINE LEARNING
           </span>
           <h1 className=" lg:max-w-[376px] max-w-full lg:text-6xl text-4xl md:leading-[72px] leading-[60px] mb-3   text-[#1E1E1E] font-bold ">
-            Master In-Demand Tech Skills.
+            Master  <br /> In-Demand Tech Skills.
           </h1>
           <p className=" max-w-full md:max-w-[498px] lg:max-w-[530px] text-base leading-6 mb-3 font-normal   text-[#707070]">
             Whether you’re starting fresh or upskilling, unlock the tools,
             mindset, and mentorship to transform your career.
           </p>
           <div className="flex gap-3 flex-wrap mb-9">
-            <Link href="/" className="  border border-[#CED7FF] text-sm leading-5 font-medium px-4 py-2 rounded-[8px] text-[#1E1E1E] hover:text-[#FFFFFF] hover:bg-[#1B5795] transition-all ease-in-out duration-500">Start Learning Today</Link>
+            <Link href="/" className="  border border-[#CED7FF] text-sm leading-5 font-medium px-4 py-2 rounded-[8px] text-[#FFFFFF] bg-[#1B5795] transition-all ease-in-out duration-500">Start Learning Today</Link>
             <Link href="/" variant="outline" className=" border border-[#CED7FF] text-sm leading-5 font-medium px-4 py-2 rounded-[8px] text-[#1E1E1E] hover:text-[#FFFFFF] hover:bg-[#1B5795] transition-all ease-in-out duration-500">View All Courses</Link>
           </div>
 
