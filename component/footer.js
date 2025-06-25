@@ -3,7 +3,21 @@ import Link from "next/link";
 import Image from "next/image"; 
 import Logo from "../Images/logo.png";
 const Footer = () => {
+    
+
+
+
+
     const footerLinks = [
+        {
+          title: "Locations",
+          links: [
+            { text: "Germany", href: "/" },
+            { text: "Bodenseestr. 81243 Munich", href: "/" },
+            { text: "USA", href: "/" },
+            { text: "8 The Green Dover, DE 19901", href: "/" }
+          ]
+        },
         {
           title: "Legal",
           links: [
@@ -95,18 +109,18 @@ const Footer = () => {
                 </div>
 
                 {/* Right Column - Links */}
-                <div className="md:max-w-[532px] w-full justify-between flex md:flex-nowrap flex-wrap gap-4 text-sm text-gray-700">
+                <div className="md:max-w-[640px] w-full justify-between flex md:flex-nowrap flex-wrap gap-8 text-sm text-gray-700">
                     {footerLinks.map((column, index) => (
                     <div key={index}>
                         <h3 className="text-[16px] font-[Inter] leading-6 text-[#1E1E1E] mb-[12px] font-semibold">
                         {column.title}
                         </h3>
-                        <ul className="flex flex-col gap-[8px]">
+                        <ul className="flex flex-col gap-[8px] md:max-w-[150px]">
                         {column.links.map((link, index) => (
                             <li key={index}>
                             <Link
                                 href={link.href}
-                                className="text-[16px] font-[Inter] leading-6 text-[#1E1E1E] font-normal hover:text-[#FB971B] "
+                                className={`text-[16px] font-[Inter] leading-6 text-[#1E1E1E] font-normal hover:text-[#FB971B] ${(link.text == "Germany" || link.text == "USA") ? " font-semibold" : "" } `}
                             >
                                 {link.text}
                             </Link>
@@ -119,7 +133,7 @@ const Footer = () => {
             </div>
        </div>
        <div className="copy-right py-5 border-t border-[#D1D1D1] px-4">
-                <span className="w-full block text-center text-[14px] font-[Inter] leading-6 text-[#1E1E1E] font-normal">Copyright 2025 SKills 2 Evolve. All Rights Reserved.</span>
+                <span className="w-full block text-center text-[14px] font-[Inter] leading-6 text-[#1E1E1E] font-normal">Copyright 2025 SKills2Evolve. All Rights Reserved.</span>
             </div>
     </div>
   );
