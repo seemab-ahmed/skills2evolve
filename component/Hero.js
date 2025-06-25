@@ -5,14 +5,14 @@ import Image from "next/image";
 const Hero = () => {
   return (
   <div className="px-5">
-       <div className="bg-white pt-[70px]  pb-2 m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px] ">
+       <div className="bg-white pt-[70px] relative pb-2 m-auto sm:max-w-[540px] md:max-w-[720px]  lg:max-w-[960px] xl:max-w-[1170px] ">
       <div className="flex md:flex-row flex-col gap-10 md:gap-0 ">
         {/* Text Section */}
         <div className="space-y-6 w-full lg:pt-[90px] pt-[30px]  max-w-[630px] 2xl:max-w-[800px] relative z-10">
           <span className="text-sm leading-5 mb-2 font-semibold  text-[#1B5795] px-4 py-1 rounded-full inline-block border border-[#CED7FF]">
             PLATFORM: EDUCATION ONLINE LEARNING
           </span>
-          <h1 className=" lg:max-w-[376px] max-w-full lg:text-6xl text-4xl md:leading-[72px] leading-[60px] mb-3   text-[#1E1E1E] font-bold ">
+          <h1 className=" lg:max-w-[376px] max-w-full lg:text-6xl text-4xl md:leading-[72px] leading-[43px] mb-3   text-[#1E1E1E] font-bold ">
             Master  <br /> In-Demand Tech Skills.
           </h1>
           <p className=" max-w-full md:max-w-[498px] lg:max-w-[530px] text-base leading-6 mb-3 font-normal   text-[#707070]">
@@ -51,6 +51,29 @@ const Hero = () => {
         <div   className="w-full max-w-[680px] lg:ml-[-139px] ">
            <Image src={bannerimage} alt="Logo" className="w-full h-auto " />
         </div>
+      </div>
+
+      <div className="sm:w-[70px] w-[40px]  sm:h-[70px] h-[40px] rounded-[37px] bg-[#FB971B] absolute sm:bottom-7 bottom-4 right-0 flex justify-center items-center">
+         <svg xmlns="http://www.w3.org/2000/svg" className="sm:w-[36px] w-[30px] sm:h-[33px] h-[27px] " width="36" height="33" viewBox="0 0 36 33" fill="none">
+            <g clip-path="url(#clip0_137_830)">
+              <path d="M4.48275 16.6084C4.482 19.297 5.19 21.9222 6.53625 24.2361L4.354 32.1421L12.508 30.0207C14.7633 31.2389 17.2902 31.8773 19.858 31.8774H19.8648C28.3416 31.8774 35.242 25.033 35.2456 16.6204C35.2473 12.5439 33.6488 8.71056 30.7445 5.82659C27.8408 2.94287 23.9789 1.35391 19.8641 1.35205C11.3863 1.35205 4.48638 8.19608 4.48288 16.6084" fill="url(#paint0_linear_137_830)"/>
+              <path d="M3.93355 16.6033C3.93268 19.3887 4.66605 22.1078 6.0603 24.5046L3.7998 32.694L12.2462 30.4965C14.5734 31.7556 17.1937 32.4194 19.8599 32.4204H19.8668C28.6478 32.4204 35.7961 25.3298 35.7998 16.616C35.8013 12.393 34.1453 8.42188 31.1373 5.4346C28.1289 2.44768 24.1289 0.801541 19.8668 0.799805C11.0843 0.799805 3.93705 7.88942 3.93355 16.6033ZM8.96368 24.0918L8.6483 23.5951C7.32255 21.5034 6.6228 19.0863 6.6238 16.6043C6.62655 9.36154 12.5671 3.46895 19.8718 3.46895C23.4093 3.47044 26.7338 4.83875 29.2343 7.32136C31.7347 9.80421 33.1106 13.1047 33.1097 16.615C33.1064 23.8578 27.1658 29.7511 19.8668 29.7511H19.8616C17.4849 29.7499 15.1541 29.1166 13.1213 27.9198L12.6376 27.6352L7.6253 28.9391L8.96368 24.0918Z" fill="url(#paint1_linear_137_830)"/>
+              <path d="M15.8847 9.99642C15.5865 9.33869 15.2726 9.32541 14.989 9.31388C14.7567 9.30396 14.4912 9.3047 14.226 9.3047C13.9605 9.3047 13.5291 9.4038 13.1645 9.79884C12.7995 10.1943 11.771 11.1498 11.771 13.0932C11.771 15.0367 13.1976 16.915 13.3965 17.1788C13.5956 17.4421 16.1506 21.558 20.1971 23.1414C23.5601 24.4572 24.2445 24.1955 24.9744 24.1295C25.7044 24.0638 27.3299 23.1742 27.6615 22.2518C27.9934 21.3295 27.9934 20.5389 27.8939 20.3737C27.7944 20.2091 27.5289 20.1103 27.1307 19.9128C26.7326 19.7154 24.7752 18.7596 24.4104 18.6277C24.0454 18.496 23.78 18.4303 23.5145 18.8258C23.249 19.2207 22.4866 20.1103 22.2542 20.3737C22.0221 20.6378 21.7897 20.6707 21.3917 20.4731C20.9934 20.2749 19.7112 19.8582 18.1901 18.5126C17.0066 17.4656 16.2076 16.1725 15.9754 15.777C15.7431 15.3821 15.9505 15.168 16.1501 14.9712C16.329 14.7942 16.5484 14.5099 16.7476 14.2793C16.9461 14.0486 17.0124 13.884 17.1451 13.6206C17.278 13.3569 17.2115 13.1262 17.1121 12.9286C17.0124 12.7311 16.2387 10.7774 15.8847 9.99642Z" fill="white"/>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_137_830" x1="1548.94" y1="3080.36" x2="1548.94" y2="1.35205" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1FAF38"/>
+                <stop offset="1" stop-color="#60D669"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_137_830" x1="1603.8" y1="3190.22" x2="1603.8" y2="0.799805" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F9F9F9"/>
+                <stop offset="1" stop-color="white"/>
+              </linearGradient>
+              <clipPath id="clip0_137_830">
+                <rect width="35" height="32" fill="white" transform="translate(0.899902 0.899902)"/>
+              </clipPath>
+            </defs>
+          </svg>
       </div>
     </div>
   </div>
