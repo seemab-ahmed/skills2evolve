@@ -5,7 +5,7 @@ import Blogimg1 from "../Images/blogImg1.png";
 import FeaturedPost from "../Images/featured-post.png";
 import Link from "next/link";
 
-const BlogCard = ({ image, title, date, readTime, excerpt }) => (
+const BlogCard = ({ image, title, date, readTime, excerpt, slug }) => (
   <div className="flex flex-col lg:flex-row items-start gap-8 border-b-2 border-[#D6D6D6] pb-6 group hover:shadow-xl transition-all ease-in-out duration-400 md:pr-3 ">
     <Image
       src={image}
@@ -28,7 +28,7 @@ const BlogCard = ({ image, title, date, readTime, excerpt }) => (
         {excerpt}
       </p>
       <div className="flex gap-5 justify-between flex-wrap">
-        <Link href="/" className="bg-[#1B5795] text-white text-[14px] font-[Inter] font-medium px-4 py-2 rounded-[8px]  transition-all ease-in-out duration-500 hover:bg-[#FB971B] ">
+        <Link href={`/blog/${slug}`} className="bg-[#1B5795] text-white text-[14px] font-[Inter] font-medium px-4 py-2 rounded-[8px]  transition-all ease-in-out duration-500 hover:bg-[#FB971B] ">
           Read more
         </Link>
         <ul className="flex gap-2 items-center"> 
@@ -79,6 +79,7 @@ const BlogCard = ({ image, title, date, readTime, excerpt }) => (
 const BlogList = ({ searchTerm = '' }) => {
   const allPosts = [
     {
+      slug: 'identity-vs-branding',
       image: Blogimg1,
       title:
         "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
@@ -88,6 +89,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
     },
     {
+      slug: 'phishing-simulations',
       image: Blogimg1,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
@@ -96,6 +98,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
+      slug: 'identity-vs-branding',
       image: Blogimg1,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
@@ -104,6 +107,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
+       slug: 'phishing-simulations',
       image: Blogimg1,
       title:
         "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
@@ -113,6 +117,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
     },
     {
+      slug: 'identity-vs-branding',
       image: Blogimg1,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
@@ -121,6 +126,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
+       slug: 'phishing-simulations',
       image: Blogimg1,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
@@ -129,6 +135,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
+      slug: 'identity-vs-branding',
       image: Blogimg1,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
@@ -137,6 +144,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
+       slug: 'phishing-simulations',
       image: Blogimg1,
       title:
         "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",

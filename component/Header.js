@@ -13,7 +13,8 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'Practice', path: '' },
     { name: 'About', path: '/all-courses' },
-    { name: 'Blogs', path: 'https://blog.skills2evolve.com' }
+    // { name: 'Blogs', path: 'https://blog.skills2evolve.com' }
+    { name: 'Blogs', path: '/blog' }
   ];
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
