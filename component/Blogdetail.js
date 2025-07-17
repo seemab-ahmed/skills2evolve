@@ -113,7 +113,7 @@ export default function BlogdetailComponent({ blog, relatedPosts }) {
                 <ul className='flex gap-3 items-center '>
                     <li><Link href={"/"}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_1_2464)">
+                        <g clipPath="url(#clip0_1_2464)">
                         <path d="M7.99935 15.3337C7.82254 15.3337 7.65297 15.2634 7.52794 15.1384C7.40292 15.0134 7.33268 14.8438 7.33268 14.667V12.667H4.66602C4.31239 12.667 3.97325 12.5265 3.72321 12.2765C3.47316 12.0264 3.33268 11.6873 3.33268 11.3337V4.66699C3.33268 4.31337 3.47316 3.97423 3.72321 3.72418C3.97325 3.47413 4.31239 3.33366 4.66602 3.33366H13.9993C14.353 3.33366 14.6921 3.47413 14.9422 3.72418C15.1922 3.97423 15.3327 4.31337 15.3327 4.66699V11.3337C15.3327 11.6873 15.1922 12.0264 14.9422 12.2765C14.6921 12.5265 14.353 12.667 13.9993 12.667H11.266L8.79935 15.1403C8.66602 15.267 8.49935 15.3337 8.33268 15.3337H7.99935ZM8.66602 11.3337V13.387L10.7193 11.3337H13.9993V4.66699H4.66602V11.3337H8.66602ZM1.99935 10.0003H0.666016V2.00033C0.666016 1.6467 0.806491 1.30756 1.05654 1.05752C1.30659 0.807468 1.64573 0.666992 1.99935 0.666992H12.666V2.00033H1.99935V10.0003Z" fill="#707070"/>
                         </g>
                         <defs>
@@ -191,12 +191,7 @@ export default function BlogdetailComponent({ blog, relatedPosts }) {
                 Your email address will not be published. Required fields are marked *
             </p>
 
-            <textarea
-                placeholder="Write a response..."
-                className="text-[#707070] text-[16px] font-normal w-full h-[147px] p-3 border border-[#D6D6D6] rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#1B5795] mb-6"
-            />
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
                 <div>
                     <label className='flex mb-[10px] text-[16px] font-normal text-[#1E1E1E]'>Name</label>
                 <input
@@ -213,15 +208,14 @@ export default function BlogdetailComponent({ blog, relatedPosts }) {
                 className="text-[#707070] text-[16px] font-normal w-full p-3 border border-[#D6D6D6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1B5795]"
                 />
                 </div>
-                <div>
-                <label className='flex mb-[10px] text-[16px] font-normal text-[#1E1E1E]'>Website</label>
-                <input
-                type="url"
-                placeholder=""
-                className="text-[#707070] text-[16px] font-normal w-full p-3 border border-[#D6D6D6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1B5795]"
-                />
-                </div>
             </div>
+
+            <textarea
+                placeholder="Write a response..."
+                className="text-[#707070] text-[16px] font-normal w-full h-[147px] p-3 border border-[#D6D6D6] rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#1B5795] mb-6"
+            />
+
+           
 
             <div className="flex items-center space-x-2 mb-6">
                 <input type="checkbox" id="save-info" className="w-4 h-4" />
