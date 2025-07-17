@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-arp="" >
       <body className={`${inter.variable} antialiased`} cz-shortcut-listen="true">
         <AOSWrapper>
           <Header />

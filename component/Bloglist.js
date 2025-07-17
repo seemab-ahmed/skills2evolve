@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Blogimg1 from "../Images/blogImg1.png";
+import Blogimg2 from "../Images/education.jpg";
+import Blogimg3 from "../Images/top-education-blogs-feed.png";
+import Blogimg4 from "../Images/The-Impact-of-Technology-on-Education.jpg";
+import Blogimg5 from "../Images/Pros-and-Cons-of-Using-Education-Technology.png";
 import FeaturedPost from "../Images/featured-post.png";
 import Link from "next/link";
 
@@ -90,7 +94,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
       slug: 'data-breach-case-study',
-      image: Blogimg1,
+      image: Blogimg2,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -99,7 +103,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
       slug: 'scholarships-in-tech',
-      image: Blogimg1,
+      image: Blogimg3,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -108,7 +112,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
        slug: 'data-breach-case-study',
-      image: Blogimg1,
+      image: Blogimg4,
       title:
         "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
       date: "April 27, 2025",
@@ -118,7 +122,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
       slug: 'identity-vs-branding',
-      image: Blogimg1,
+      image: Blogimg5,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -136,7 +140,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
       slug: 'identity-vs-branding',
-      image: Blogimg1,
+      image: Blogimg2,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -145,7 +149,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
        slug: 'data-breach-case-study',
-      image: Blogimg1,
+      image: Blogimg3,
       title:
         "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
       date: "April 27, 2025",
@@ -155,7 +159,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
       slug: 'exploit-breaches',
-      image: Blogimg1,
+      image: Blogimg4,
       title: "Exploit: Breaches and the Data Insights they Offer",
       date: "April 27, 2025",
       readTime: 4,
@@ -164,7 +168,7 @@ const BlogList = ({ searchTerm = '' }) => {
     },
     {
       slug: 'another-related-post',
-      image: Blogimg1,
+      image: Blogimg5,
       title: "Another Related Post",
       date: "April 27, 2025",
       readTime: 4,
@@ -180,7 +184,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
-      image: Blogimg1,
+      image: Blogimg3,
       title:
         "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
       date: "April 27, 2025",
@@ -197,7 +201,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
-      image: Blogimg1,
+      image: Blogimg2,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -205,56 +209,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
-      title:
-        "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
-    },
-    {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
+      image: Blogimg5,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -271,7 +226,56 @@ const BlogList = ({ searchTerm = '' }) => {
         "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
     },
     {
+      image: Blogimg4,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg2,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
       image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg5,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg3,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg2,
+      title:
+        "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "Following our in-depth analysis of IBM's 2025 Threat Intelligence Index, CybeReady's research team has identified a significant Back to the...",
+    },
+    {
+      image: Blogimg4,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -295,7 +299,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
-      image: Blogimg1,
+      image: Blogimg3,
       title:
         "Identity is the New Perimeter: CybeReady's Analysis of IBM's X-Force 2025 Threat Intelligence Index",
       date: "April 27, 2025",
@@ -312,7 +316,31 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
+      image: Blogimg5,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
       image: Blogimg1,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg4,
+      title: "Why Only Phishing Simulations Are Not Enough",
+      date: "April 27, 2025",
+      readTime: 4,
+      excerpt:
+        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
+    },
+    {
+      image: Blogimg2,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -336,7 +364,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
-      image: Blogimg1,
+      image: Blogimg5,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,
@@ -344,31 +372,7 @@ const BlogList = ({ searchTerm = '' }) => {
         "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
     },
     {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
-      title: "Why Only Phishing Simulations Are Not Enough",
-      date: "April 27, 2025",
-      readTime: 4,
-      excerpt:
-        "In the world of cybersecurity awareness, phishing simulations have long been touted as the frontline defense against cyber threats. However...",
-    },
-    {
-      image: Blogimg1,
+      image: Blogimg2,
       title: "Why Only Phishing Simulations Are Not Enough",
       date: "April 27, 2025",
       readTime: 4,

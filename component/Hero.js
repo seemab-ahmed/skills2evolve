@@ -62,12 +62,12 @@ const Hero = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_137_830" x1="1548.94" y1="3080.36" x2="1548.94" y2="1.35205" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1FAF38"/>
-                <stop offset="1" stop-color="#60D669"/>
+                <stop stopColor="#1FAF38"/>
+                <stop offset="1" stopColor="#60D669"/>
               </linearGradient>
               <linearGradient id="paint1_linear_137_830" x1="1603.8" y1="3190.22" x2="1603.8" y2="0.799805" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#F9F9F9"/>
-                <stop offset="1" stop-color="white"/>
+                <stop stopColor="#F9F9F9"/>
+                <stop offset="1" stopColor="white"/>
               </linearGradient>
               <clipPath id="clip0_137_830">
                 <rect width="35" height="32" fill="white" transform="translate(0.899902 0.899902)"/>
