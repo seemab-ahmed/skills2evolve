@@ -13,9 +13,9 @@ const Footer = () => {
           title: "Locations",
           links: [
             { text: "Germany", href: "/" },
-            { text: "Bodenseestr. 81243 Munich", href: "/" },
+            { text: "Munich", href: "/" },
             { text: "USA", href: "/" },
-            { text: "8 The Green Dover, DE 19901", href: "/" }
+            { text: "Delaware", href: "/" }
           ]
         },
         {
@@ -120,7 +120,7 @@ const Footer = () => {
                             <li key={index}>
                             <Link
                                 href={link.href}
-                                className={`text-[16px] font-[Inter] leading-6 text-[#1E1E1E] font-normal hover:text-[#FB971B] ${(link.text == "Germany" || link.text == "USA") ? " font-semibold" : "" } `}
+                                className={`text-[16px] font-[Inter] leading-6 text-[#1E1E1E] font-normal hover:text-[#FB971B]`}
                             >
                                 {link.text}
                             </Link>
